@@ -1,0 +1,411 @@
+<html><head><meta charset="utf-8" emacsmode="-*- markdown -*-">
+                            </head><body id="md" style="visibility: visible;"><meta charset="UTF-8"><meta http-equiv="content-type" content="text/html;charset=UTF-8"><meta name="viewport" content="width=600, initial-scale=1"><style>body{max-width:680px;margin:auto;padding:20px;text-align:justify;line-height:140%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased;color:#222;font-family:Palatino,Georgia,"Times New Roman",serif}</style><style>@media print{*{-webkit-print-color-adjust:exact;text-shadow:none !important}}body{counter-reset: h1 paragraph line item list-item}@page{margin:0;size:auto}#mdContextMenu{position:absolute;background:#383838;cursor:default;border:1px solid #999;color:#fff;padding:4px 0px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",sans-serif;font-size:85%;font-weight:600;border-radius:4px;box-shadow:0px 3px 10px rgba(0,0,0,35%)}#mdContextMenu div{padding:0px 20px}#mdContextMenu div:hover{background:#1659d1}.md code,.md pre{font-family:Menlo,Consolas,monospace;font-size:85%;text-align:left;line-height:140%}.md .mediumToc code,.md longToc code,.md .shortToc code,.md h1 code,.md h2 code,.md h3 code,.md h4 code,.md h5 code,.md h6 code{font-size:unset}.md div.title{font-size:26px;font-weight:800;line-height:120%;text-align:center}.md div.afterTitles{height:10px}.md div.subtitle{text-align:center}.md iframe.textinsert, .md object.textinsert,.md iframe:not(.markdeep){display:block;margin-top:10px;margin-bottom:10px;width:100%;height:75vh;border:1px solid #000;border-radius:4px;background:#f5f5f4}.md .image{display:inline-block}.md img{max-width:100%;page-break-inside:avoid}.md li{text-align:left;text-indent:0}.md pre.listing {width:100%;tab-size:4;-moz-tab-size:4;-o-tab-size:4;counter-reset:line;overflow-x:auto;resize:horizontal}.md pre.listing .linenumbers span.line:before{width:30px;margin-left:-28px;font-size:80%;text-align:right;counter-increment:line;content:counter(line);display:inline-block;padding-right:13px;margin-right:8px;color:#ccc}.md div.tilde{margin:20px 0 -10px;text-align:center}.md .imagecaption,.md .tablecaption,.md .listingcaption{display:inline-block;margin:7px 5px 12px;text-align:justify;font-style:italic}.md img.pixel{image-rendering:-moz-crisp-edges;image-rendering:pixelated}.md blockquote.fancyquote{margin:25px 0 25px;text-align:left;line-height:160%}.md blockquote.fancyquote::before{content:"“";color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-right:6px;vertical-align:-0.3em}.md span.fancyquote{font-size:118%;color:#777;font-style:italic}.md span.fancyquote::after{content:"”";font-style:normal;color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-left:6px;vertical-align:-0.3em}.md blockquote.fancyquote .author{width:100%;margin-top:10px;display:inline-block;text-align:right}.md small{font-size:60%}.md big{font-size:150%}.md div.title,.md contents,.md .tocHeader,.md h1,.md h2,.md h3,.md h4,.md h5,.md h6,.md .shortTOC,.md .mediumTOC,.md .nonumberh1,.md .nonumberh2,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{font-family:Verdana,Helvetica,Arial,sans-serif;margin:13.4px 0 13.4px;padding:15px 0 3px;border-top:none;clear:both}.md .tocTop {display:none}.md h1,.md h2,.md h3,.md h4,.md h5,.md h6,.md .nonumberh1,.md .nonumberh2,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{page-break-after:avoid;break-after:avoid}.md svg.diagram{display:block;font-family:Menlo,Consolas,monospace;font-size:85%;text-align:center;stroke-linecap:round;stroke-width:2px;page-break-inside:avoid;stroke:#000;fill:#000}.md svg.diagram .opendot{fill:#fff}.md svg.diagram .shadeddot{fill:#CCC}.md svg.diagram .dotteddot{stroke:#000;stroke-dasharray:4;fill:none}.md svg.diagram text{stroke:none}@media print{@page{margin:1in 5mm;transform: scale(150%)}}@media print{.md .pagebreak{page-break-after:always;visibility:hidden}}.md a{font-family:Georgia,Palatino,'Times New Roman'}.md h1,.md .tocHeader,.md .nonumberh1{border-bottom:3px solid;font-size:20px;font-weight:bold;}.md h1,.md .nonumberh1{counter-reset:h2 h3 h4 h5 h6}.md h2,.md .nonumberh2{counter-reset:h3 h4 h5 h6;border-bottom:2px solid #999;color:#555;font-weight:bold;font-size:18px;}.md h3,.md h4,.md h5,.md h6,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{font-family:Verdana,Helvetica,Arial,sans-serif;color:#555;font-size:16px;}.md h3{counter-reset:h4 h5 h6}.md h4{counter-reset:h5 h6}.md h5{counter-reset:h6}.md div.table{margin:16px 0 16px 0}.md table{border-collapse:collapse;line-height:140%;page-break-inside:avoid}.md table.table{margin:auto}.md table.calendar{width:100%;margin:auto;font-size:11px;font-family:Verdana,Helvetica,Arial,sans-serif}.md table.calendar th{font-size:16px}.md .today{background:#ECF8FA}.md .calendar .parenthesized{color:#999;font-style:italic}.md table.table th{color:#FFF;background-color:#AAA;border:1px solid #888;padding:8px 15px 8px 15px}.md table.table td{padding:5px 15px 5px 15px;border:1px solid #888}.md table.table tr:nth-child(even){background:#EEE}.md pre.tilde{border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;padding: 5px 0 5px 20px;margin:0 0 0 0;background:#FCFCFC;page-break-inside:avoid}.md a.target{width:0px;height:0px;visibility:hidden;font-size:0px;display:inline-block}.md a:link, .md a:visited{color:#38A;text-decoration:none}.md a:link:hover{text-decoration:underline}.md dt{font-weight:700}.md dl>dd{margin-top:-8px; margin-bottom:8px}.md dl>table{margin:35px 0 30px}.md code{page-break-inside:avoid;} @media print{.md .listing code{white-space:pre-wrap}}.md .endnote{font-size:13px;line-height:15px;padding-left:10px;text-indent:-10px}.md .bib{padding-left:80px;text-indent:-80px;text-align:left}.markdeepFooter{font-size:9px;text-align:right;padding-top:80px;color:#999}.md .mediumTOC{float:right;font-size:12px;line-height:15px;border-left:1px solid #CCC;padding-left:15px;margin:15px 0px 15px 25px}.md .mediumTOC .level1{font-weight:600}.md .longTOC .level1{font-weight:600;display:block;padding-top:12px;margin:0 0 -20px}.md .shortTOC{text-align:center;font-weight:bold;margin-top:15px;font-size:14px}.md .img-attrib-container .img-attrib{font-size:50%;line-height:120%;writing-mode:vertical-rl;position:absolute;bottom:0;right:0;padding:8px 4px;color:#FFF;background-color:rgba(0,0,0,.3)}.md .img-attrib-container .img-attrib a{color:#FFF;text-decoration:none}.md .admonition{position:relative;margin:1em 0;padding:.4rem 1rem;border-radius:.2rem;border-left:2.5rem solid rgba(68,138,255,.4);background-color:rgba(68,138,255,.15);}.md .admonition-title{font-weight:bold;border-bottom:solid 1px rgba(68,138,255,.4);padding-bottom:4px;margin-bottom:4px;margin-left: -1rem;padding-left:1rem;margin-right:-1rem;border-color:rgba(68,138,255,.4)}.md .admonition.tip{border-left:2.5rem solid rgba(50,255,90,.4);background-color:rgba(50,255,90,.15)}.md .admonition.tip::before{content:"\24d8";font-weight:bold;font-size:150%;position:relative;top:3px;color:rgba(26,128,46,.8);left:-2.95rem;display:block;width:0;height:0}.md .admonition.tip>.admonition-title{border-color:rgba(50,255,90,.4)}.md .admonition.warn,.md .admonition.warning{border-left:2.5rem solid rgba(255,145,0,.4);background-color:rgba(255,145,0,.15)}.md .admonition.warn::before,.md .admonition.warning::before{content:"\26A0";font-weight:bold;font-size:150%;position:relative;top:2px;color:rgba(128,73,0,.8);left:-2.95rem;display:block;width:0;height:0}.md .admonition.warn>.admonition-title,.md .admonition.warning>.admonition-title{border-color:rgba(255,145,0,.4)}.md .admonition.error{border-left: 2.5rem solid rgba(255,23,68,.4);background-color:rgba(255,23,68,.15)}.md .admonition.error>.admonition-title{border-color:rgba(255,23,68,.4)}.md .admonition.error::before{content: "\2612";font-family:"Arial";font-size:200%;position:relative;color:rgba(128,12,34,.8);top:-2px;left:-3rem;display:block;width:0;height:0}.md .admonition p:last-child{margin-bottom:0}.md li.checked,.md li.unchecked{list-style:none;overflow:visible;text-indent:-1.2em}.md li.checked:before,.md li.unchecked:before{content:"\2611";display:block;float:left;width:1em;font-size:120%}.md li.unchecked:before{content:"\2610"}</style><style>.md h1::before {
+content:counter(h1) " ";
+counter-increment: h1;margin-right:10px}
+
+.md h2::before {
+content:counter(h1) "."counter(h2) " ";
+counter-increment: h2;margin-right:10px}
+
+.md h3::before {
+content:counter(h1) "."counter(h2) "."counter(h3) " ";
+counter-increment: h3;margin-right:10px}
+
+.md h4::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) " ";
+counter-increment: h4;margin-right:10px}
+
+.md h5::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) " ";
+counter-increment: h5;margin-right:10px}
+
+.md h6::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) "."counter(h6) " ";
+counter-increment: h6;margin-right:10px}
+
+</style><style>.hljs{display:block;overflow-x:auto;padding:0.5em;background:#fff;color:#000;-webkit-text-size-adjust:none}.hljs-comment{color:#006a00}.hljs-keyword{color:#02E}.hljs-literal,.nginx .hljs-title{color:#aa0d91}.method,.hljs-list .hljs-title,.hljs-tag .hljs-title,.setting .hljs-value,.hljs-winutils,.tex .hljs-command,.http .hljs-title,.hljs-request,.hljs-status,.hljs-name{color:#008}.hljs-envvar,.tex .hljs-special{color:#660}.hljs-string{color:#c41a16}.hljs-tag .hljs-value,.hljs-cdata,.hljs-filter .hljs-argument,.hljs-attr_selector,.apache .hljs-cbracket,.hljs-date,.hljs-regexp{color:#080}.hljs-sub .hljs-identifier,.hljs-pi,.hljs-tag,.hljs-tag .hljs-keyword,.hljs-decorator,.ini .hljs-title,.hljs-shebang,.hljs-prompt,.hljs-hexcolor,.hljs-rule .hljs-value,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-number,.css .hljs-function,.hljs-function .hljs-title,.coffeescript .hljs-attribute{color:#A0C}.hljs-function .hljs-title{font-weight:bold;color:#000}.hljs-class .hljs-title,.smalltalk .hljs-class,.hljs-type,.hljs-typename,.hljs-tag .hljs-attribute,.hljs-doctype,.hljs-class .hljs-id,.hljs-built_in,.setting,.hljs-params,.clojure .hljs-attribute{color:#5c2699}.hljs-variable{color:#3f6e74}.css .hljs-tag,.hljs-rule .hljs-property,.hljs-pseudo,.hljs-subst{color:#000}.css .hljs-class,.css .hljs-id{color:#9b703f}.hljs-value .hljs-important{color:#ff7700;font-weight:bold}.hljs-rule .hljs-keyword{color:#c5af75}.hljs-annotation,.apache .hljs-sqbracket,.nginx .hljs-built_in{color:#9b859d}.hljs-preprocessor,.hljs-preprocessor *,.hljs-pragma{color:#643820}.tex .hljs-formula{background-color:#eee;font-style:italic}.diff .hljs-header,.hljs-chunk{color:#808080;font-weight:bold}.diff .hljs-change{background-color:#bccff9}.hljs-addition{background-color:#baeeba}.hljs-deletion{background-color:#ffc8bd}.hljs-comment .hljs-doctag{font-weight:bold}.method .hljs-id{color:#000}</style><style>div.title { padding-top: 40px; } div.afterTitles { height: 15px; }</style><meta charset="utf-8" emacsmode="-*- markdown -*-">
+                            <span class="md"><p><title>A warm welcome to DNS</title></p><div class="title"> A warm welcome to DNS </div>
+
+<div class="afterTitles"></div>
+
+<p></p><p>
+
+Note: this page is part of the
+'<a href="/">hello-dns</a>' documentation effort.
+
+</p>
+<div class="longTOC"><div class="tocHeader">Contents</div><p><a href="#" class="tocTop">(Top)</a><br>
+<a href="#authoritativeservers" class="level1"><span class="tocNumber">1&nbsp; </span>Authoritative servers</a><br>
+<a href="#incomingqueries" class="level1"><span class="tocNumber">2&nbsp; </span>Incoming queries</a><br>
+<a href="#delegation" class="level1"><span class="tocNumber">3&nbsp; </span>Delegation</a><br>
+<a href="#sendinganswers" class="level1"><span class="tocNumber">4&nbsp; </span>Sending answers</a><br>
+<a href="#thealgorithm" class="level1"><span class="tocNumber">5&nbsp; </span>The algorithm</a><br>
+&nbsp;&nbsp;<a href="#thealgorithm/wildcards" class="level2"><span class="tocNumber">5.1&nbsp; </span>Wildcards</a><br>
+<a href="#soarecords" class="level1"><span class="tocNumber">6&nbsp; </span>SOA Records</a><br>
+<a href="#replication" class="level1"><span class="tocNumber">7&nbsp; </span>Replication</a><br>
+&nbsp;&nbsp;<a href="#replication/notification" class="level2"><span class="tocNumber">7.1&nbsp; </span>Notification</a><br>
+<a href="#tbc" class="level1"><span class="tocNumber">8&nbsp; </span>TBC</a><br>
+</p></div><a class="target" name="authoritativeservers">&nbsp;</a><a class="target" name="authoritativeservers">&nbsp;</a><a class="target" name="toc1">&nbsp;</a><h1>Authoritative servers</h1>
+<p>
+
+
+The basics of DNS Authoritative operation have already been described in the
+<a href="/basic.html">Basic DNS</a> document.  In this file, we delve deeper into zone
+transfers and notifications.
+
+</p><p>
+
+This document covers RFCs 1982, 1995, 1996 (all three related to zone
+transfers), 4592 (Wildcards), 5936 (again zone transfers) and 7766 (TCP).
+
+</p>
+<a class="target" name="incomingqueries">&nbsp;</a><a class="target" name="incomingqueries">&nbsp;</a><a class="target" name="toc2">&nbsp;</a><h1>Incoming queries</h1>
+<p>
+
+An authoritative server ignores the value of the Recursion Desired (RD) bit
+in the DNS header. On any responses it generates, the Recursion Available
+bit is set to zero.
+
+</p><p>
+
+Take special care not to send responses to what is already a DNS response.
+This leads to tight loops and denial of service attacks.  In other words, QR
+must be 0 on incoming packets.
+
+</p>
+<a class="target" name="delegation">&nbsp;</a><a class="target" name="delegation">&nbsp;</a><a class="target" name="toc3">&nbsp;</a><h1>Delegation</h1>
+<p>
+
+As noted in the basic DNS document, finding the answer to a query may mean
+consulting multiple zones: the root zone, the org zone, the ietf.org zone,
+for example.
+
+</p><p>
+
+The process of traversing such a zone-cut is called a delegation. A
+delegation is signified by the presence of NS records outside of the zone
+apex (aka the name of the zone).
+
+</p><p>
+
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="304" width="768" style="margin:0 auto 0 auto;"><g transform="translate(8,16 )">
+<path d="M 176,192 L 176,224 " style="fill:none;"></path>
+<path d="M 248,192 L 248,224 " style="fill:none;"></path>
+<path d="M 336,48 L 336,80 " style="fill:none;"></path>
+<path d="M 336,112 L 336,160 " style="fill:none;"></path>
+<path d="M 328,16 L 344,16 " style="fill:none;"></path>
+<path d="M 232,32 L 312,32 " style="fill:none;"></path>
+<path d="M 360,32 L 432,32 " style="fill:none;"></path>
+<path d="M 328,48 L 344,48 " style="fill:none;"></path>
+<path d="M 200,80 L 216,80 " style="fill:none;"></path>
+<path d="M 328,80 L 344,80 " style="fill:none;"></path>
+<path d="M 448,80 L 464,80 " style="fill:none;"></path>
+<path d="M 0,96 L 16,96 " style="fill:none;"></path>
+<path d="M 88,96 L 104,96 " style="fill:none;"></path>
+<path d="M 504,96 L 520,96 " style="fill:none;"></path>
+<path d="M 592,96 L 608,96 " style="fill:none;"></path>
+<path d="M 200,112 L 216,112 " style="fill:none;"></path>
+<path d="M 328,112 L 344,112 " style="fill:none;"></path>
+<path d="M 448,112 L 464,112 " style="fill:none;"></path>
+<path d="M 168,160 L 184,160 " style="fill:none;"></path>
+<path d="M 240,160 L 256,160 " style="fill:none;"></path>
+<path d="M 328,160 L 344,160 " style="fill:none;"></path>
+<path d="M 72,176 L 88,176 " style="fill:none;"></path>
+<path d="M 168,192 L 184,192 " style="fill:none;"></path>
+<path d="M 240,192 L 256,192 " style="fill:none;"></path>
+<path d="M 328,192 L 344,192 " style="fill:none;"></path>
+<path d="M 168,224 L 184,224 " style="fill:none;"></path>
+<path d="M 240,224 L 256,224 " style="fill:none;"></path>
+<path d="M 72,240 L 88,240 " style="fill:none;"></path>
+<path d="M 336,240 L 352,240 " style="fill:none;"></path>
+<path d="M 168,256 L 184,256 " style="fill:none;"></path>
+<path d="M 240,256 L 256,256 " style="fill:none;"></path>
+<path d="M 208,112 L 232,160 " style="fill:none;"></path>
+<path d="M 432,32 L 456,80 " style="fill:none;"></path>
+<path d="M 208,80 L 232,32 " style="fill:none;"></path>
+<path d="M 184,160 L 208,112 " style="fill:none;"></path>
+<path d="M 328,16 C 311.2,16 312,32 312,32 " style="fill:none;"></path>
+<path d="M 344,16 C 360.8,16 360,32 360,32 " style="fill:none;"></path>
+<path d="M 328,48 C 311.2,48 312,32 312,32 " style="fill:none;"></path>
+<path d="M 344,48 C 360.8,48 360,32 360,32 " style="fill:none;"></path>
+<path d="M 200,80 C 183.2,80 184,96 184,96 " style="fill:none;"></path>
+<path d="M 216,80 C 232.8,80 232,96 232,96 " style="fill:none;"></path>
+<path d="M 328,80 C 311.2,80 312,96 312,96 " style="fill:none;"></path>
+<path d="M 344,80 C 360.8,80 360,96 360,96 " style="fill:none;"></path>
+<path d="M 448,80 C 431.2,80 432,96 432,96 " style="fill:none;"></path>
+<path d="M 464,80 C 480.8,80 480,96 480,96 " style="fill:none;"></path>
+<path d="M 200,112 C 183.2,112 184,96 184,96 " style="fill:none;"></path>
+<path d="M 216,112 C 232.8,112 232,96 232,96 " style="fill:none;"></path>
+<path d="M 328,112 C 311.2,112 312,96 312,96 " style="fill:none;"></path>
+<path d="M 344,112 C 360.8,112 360,96 360,96 " style="fill:none;"></path>
+<path d="M 448,112 C 431.2,112 432,96 432,96 " style="fill:none;"></path>
+<path d="M 464,112 C 480.8,112 480,96 480,96 " style="fill:none;"></path>
+<path d="M 168,160 C 151.2,160 152,176 152,176 " style="fill:none;"></path>
+<path d="M 184,160 C 200.8,160 200,176 200,176 " style="fill:none;"></path>
+<path d="M 240,160 C 223.2,160 224,176 224,176 " style="fill:none;"></path>
+<path d="M 256,160 C 272.8,160 272,176 272,176 " style="fill:none;"></path>
+<path d="M 328,160 C 311.2,160 312,176 312,176 " style="fill:none;"></path>
+<path d="M 344,160 C 360.8,160 360,176 360,176 " style="fill:none;"></path>
+<path d="M 168,192 C 151.2,192 152,176 152,176 " style="fill:none;"></path>
+<path d="M 184,192 C 200.8,192 200,176 200,176 " style="fill:none;"></path>
+<path d="M 240,192 C 223.2,192 224,176 224,176 " style="fill:none;"></path>
+<path d="M 256,192 C 272.8,192 272,176 272,176 " style="fill:none;"></path>
+<path d="M 328,192 C 311.2,192 312,176 312,176 " style="fill:none;"></path>
+<path d="M 344,192 C 360.8,192 360,176 360,176 " style="fill:none;"></path>
+<path d="M 168,224 C 151.2,224 152,240 152,240 " style="fill:none;"></path>
+<path d="M 184,224 C 200.8,224 200,240 200,240 " style="fill:none;"></path>
+<path d="M 240,224 C 223.2,224 224,240 224,240 " style="fill:none;"></path>
+<path d="M 256,224 C 272.8,224 272,240 272,240 " style="fill:none;"></path>
+<path d="M 168,256 C 151.2,256 152,240 152,240 " style="fill:none;"></path>
+<path d="M 184,256 C 200.8,256 200,240 200,240 " style="fill:none;"></path>
+<path d="M 240,256 C 223.2,256 224,240 224,240 " style="fill:none;"></path>
+<path d="M 256,256 C 272.8,256 272,240 272,240 " style="fill:none;"></path>
+<polygon points="344,240 332,234.4 332,245.6 " style="stroke:none" transform="rotate(180,336,240 )"></polygon>
+<polygon points="96,240 84,234.4 84,245.6 " style="stroke:none" transform="rotate(0,88,240 )"></polygon>
+<polygon points="96,176 84,170.4 84,181.6 " style="stroke:none" transform="rotate(0,88,176 )"></polygon>
+<g transform="translate(0,0)"><text text-anchor="middle" x="368" y="20">S</text><text text-anchor="middle" x="376" y="20">O</text><text text-anchor="middle" x="384" y="20">A</text><text text-anchor="middle" x="328" y="36">o</text><text text-anchor="middle" x="336" y="36">r</text><text text-anchor="middle" x="344" y="36">g</text><text text-anchor="middle" x="368" y="52">N</text><text text-anchor="middle" x="376" y="52">S</text><text text-anchor="middle" x="24" y="100">Z</text><text text-anchor="middle" x="32" y="100">O</text><text text-anchor="middle" x="40" y="100">N</text><text text-anchor="middle" x="48" y="100">E</text><text text-anchor="middle" x="64" y="100">C</text><text text-anchor="middle" x="72" y="100">U</text><text text-anchor="middle" x="80" y="100">T</text><text text-anchor="middle" x="200" y="100">i</text><text text-anchor="middle" x="208" y="100">e</text><text text-anchor="middle" x="216" y="100">t</text><text text-anchor="middle" x="224" y="100">f</text><text text-anchor="middle" x="248" y="100">N</text><text text-anchor="middle" x="256" y="100">S</text><text text-anchor="middle" x="328" y="100">i</text><text text-anchor="middle" x="336" y="100">e</text><text text-anchor="middle" x="344" y="100">t</text><text text-anchor="middle" x="352" y="100">g</text><text text-anchor="middle" x="376" y="100">N</text><text text-anchor="middle" x="384" y="100">S</text><text text-anchor="middle" x="448" y="100">.</text><text text-anchor="middle" x="456" y="100">.</text><text text-anchor="middle" x="464" y="100">.</text><text text-anchor="middle" x="528" y="100">Z</text><text text-anchor="middle" x="536" y="100">O</text><text text-anchor="middle" x="544" y="100">N</text><text text-anchor="middle" x="552" y="100">E</text><text text-anchor="middle" x="568" y="100">C</text><text text-anchor="middle" x="576" y="100">U</text><text text-anchor="middle" x="584" y="100">T</text><text text-anchor="middle" x="24" y="180">E</text><text text-anchor="middle" x="32" y="180">M</text><text text-anchor="middle" x="40" y="180">P</text><text text-anchor="middle" x="48" y="180">T</text><text text-anchor="middle" x="56" y="180">Y</text><text text-anchor="middle" x="168" y="180">o</text><text text-anchor="middle" x="176" y="180">r</text><text text-anchor="middle" x="184" y="180">d</text><text text-anchor="middle" x="240" y="180">f</text><text text-anchor="middle" x="248" y="180">r</text><text text-anchor="middle" x="256" y="180">a</text><text text-anchor="middle" x="328" y="180">.</text><text text-anchor="middle" x="336" y="180">.</text><text text-anchor="middle" x="344" y="180">.</text><text text-anchor="middle" x="0" y="196">N</text><text text-anchor="middle" x="8" y="196">O</text><text text-anchor="middle" x="16" y="196">N</text><text text-anchor="middle" x="24" y="196">-</text><text text-anchor="middle" x="32" y="196">T</text><text text-anchor="middle" x="40" y="196">E</text><text text-anchor="middle" x="48" y="196">R</text><text text-anchor="middle" x="56" y="196">M</text><text text-anchor="middle" x="64" y="196">I</text><text text-anchor="middle" x="72" y="196">N</text><text text-anchor="middle" x="80" y="196">A</text><text text-anchor="middle" x="88" y="196">L</text><text text-anchor="middle" x="32" y="244">G</text><text text-anchor="middle" x="40" y="244">L</text><text text-anchor="middle" x="48" y="244">U</text><text text-anchor="middle" x="56" y="244">E</text><text text-anchor="middle" x="136" y="244">A</text><text text-anchor="middle" x="168" y="244">n</text><text text-anchor="middle" x="176" y="244">s</text><text text-anchor="middle" x="184" y="244">1</text><text text-anchor="middle" x="240" y="244">n</text><text text-anchor="middle" x="248" y="244">s</text><text text-anchor="middle" x="256" y="244">2</text><text text-anchor="middle" x="288" y="244">A</text><text text-anchor="middle" x="368" y="244">G</text><text text-anchor="middle" x="376" y="244">L</text><text text-anchor="middle" x="384" y="244">U</text><text text-anchor="middle" x="392" y="244">E</text><text text-anchor="middle" x="112" y="260">A</text><text text-anchor="middle" x="120" y="260">A</text><text text-anchor="middle" x="128" y="260">A</text><text text-anchor="middle" x="136" y="260">A</text><text text-anchor="middle" x="288" y="260">A</text><text text-anchor="middle" x="296" y="260">A</text><text text-anchor="middle" x="304" y="260">A</text><text text-anchor="middle" x="312" y="260">A</text></g></g></svg>
+
+</p>
+<a class="target" name="sendinganswers">&nbsp;</a><a class="target" name="sendinganswers">&nbsp;</a><a class="target" name="toc4">&nbsp;</a><h1>Sending answers</h1>
+<p>
+
+Fundamentally, the following answers are possible (this omits CNAME and
+wildcard processing, more about which below).
+
+</p><p>
+
+</p><ol start="1">
+<li class="number">No applicable zone is loaded. Send REFUSED answer.
+</li>
+<li class="number">From best zone, there was an exact match for the qname and qtype, send RRSET, set NO ERROR
+</li>
+<li class="number">From best zone, the name queried exists, but no matching qtype and no NS type present (send NO DATA)
+</li>
+<li class="number">From best zone, the name may exist, but there is a node or a parent has an NS record. Send delegation</li></ol>
+
+<p></p>
+<a class="target" name="thealgorithm">&nbsp;</a><a class="target" name="thealgorithm">&nbsp;</a><a class="target" name="toc5">&nbsp;</a><h1>The algorithm</h1>
+<p>
+
+Section 4.3.2 of <a href="https://tools.ietf.org/html/rfc1034">RFC 1034</a>  explains
+this process well, except that it also discusses what to do when operating
+as a resolver, which confuses matters.
+
+</p><p>
+
+Here is the RFC 1034 algorithm cleaned of outdated instructions and items
+that are only applicable to resolvers, with new instructions in <strong class="asterisk">bold</strong>.
+
+</p><p>
+
+</p><ol start="1">
+ <li class="number">Removed
+</li>
+ <li class="number">Search the available zones for the zone which is the nearest
+     ancestor to QNAME.  If such a zone is found, go to step 3,
+     otherwise <strong class="asterisk">set RCODE to REFUSED</strong> and go to step <strong class="asterisk">7</strong>.
+</li>
+ <li class="number">Start matching down, label by label, in the zone.  The
+     matching process can terminate several ways:
+<ol start="1">
+    <li class="number">If the whole of QNAME is matched, we have found the
+           node.
+           If the data at the node is a CNAME, and QTYPE doesn't
+           match CNAME, copy the CNAME RR into the answer section
+           of the response, change QNAME to the canonical name in
+           the CNAME RR, and go back to step 1.
+           Otherwise, copy all RRs which match QTYPE into the
+           answer section and go to step 6.
+</li>
+    <li class="number">If a match would take us out of the authoritative data,
+           we have a referral.  This happens when we encounter a
+           node with NS RRs marking cuts along the bottom of a
+           zone.
+           Copy the NS RRs for the subzone into the authority
+           section of the reply.  Put whatever addresses are
+           available into the additional section, using glue RRs
+           if the addresses are not available from authoritative
+           data <del>or the cache</del>.  Go to step 4.
+</li>
+    <li class="number">If at some label, a match is impossible (i.e., the
+           corresponding label does not exist), look to see if
+           the * label exists.
+           If the * label does not exist, check whether the name
+           we are looking for is the original QNAME in the query
+           or a name we have followed due to a CNAME.  If the name
+           is original, set an authoritative name error in the
+           response and exit.  Otherwise just exit.
+           If the * label does exist, match RRs at that node
+           against QTYPE.  If any match, copy them into the answer
+           section, but set the owner of the RR to be QNAME, and
+           not the node with the * label.  Go to step 6.
+</li></ol>
+ </li><li class="number">Removed
+</li>
+ <li class="number">Removed
+</li>
+ <li class="number">Using local data only, attempt to add other RRs which may be
+     useful to the additional section of the query.
+</li>
+ <li class="number"><strong class="asterisk">Exit.</strong></li></ol>
+
+<p></p><p>
+
+This description is valid, but its 'node' language may be confusing. An
+alternate way to describe the process is as follows:
+
+</p><p>
+
+</p><ol start="2">
+ <li class="number">If the query name is <code>www.ietf.org</code>, check the store for a
+     <code>www.ietf.org</code> zone.  If not found, try <code>ietf.org</code>, that is not found try
+     <code>org</code>, otherwise try the root zone. If no zones were found, send out
+     REFUSED.
+</li>
+ <li class="number">Within the first zone that matched (say, <code>org</code>), search for <code>www.ietf</code>.
+     If that was not found, search for <code>ietf</code> etc etc</li></ol>
+
+<p></p><p>
+
+This is effectively the same thing but implemented on a regular key/value
+lookup engine.
+
+</p>
+<a class="target" name="wildcards">&nbsp;</a><a class="target" name="thealgorithm/wildcards">&nbsp;</a><a class="target" name="toc5.1">&nbsp;</a><h2>Wildcards</h2>
+<p>
+
+The algorithm as described in the previous section does mention wildcards,
+but not in great detail, and not coherently. <a href="https://tools.ietf.org/html/rfc4592">RFC
+4592</a> by comparison discusses wildcards
+in exhaustive detail.
+
+</p><p>
+
+4592 specifically notes that <code>one.two.three.ietf.org</code> is still matched by
+<code>*.ietf.org</code>. It also specifies that <code>one.*.three.ietf.org</code> is a valid DNS
+name, but that it will only match itself, and not <code>one.two.three.ietf.org</code>.
+
+</p><p>
+
+4592 attempts to clarify every possible misunderstanding relating to
+wildcards (including interactions with DNSSEC), but because of its
+overwhelming detail may itself be a confusing document to read.  It is
+recommended to refer to 4592 to resolve difficult wildcard questions, but if
+possible to stay well clear of difficult wildcard situations in the first
+place.
+
+</p><p>
+
+Specifically, this means not using wildcards for NS records or in other
+exciting places.
+
+</p>
+<a class="target" name="soarecords">&nbsp;</a><a class="target" name="soarecords">&nbsp;</a><a class="target" name="toc6">&nbsp;</a><h1>SOA Records</h1>
+<p>
+
+There is only one SOA that is guaranteed to exist on the internet and that
+is the one for the root zone (called <code>.</code>).  As of 2018, it looks like this:
+
+</p><pre class="listing backtick"><code><span class="line"></span>.   <span class="hljs-number">86400</span>   IN   SOA   <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.root-servers</span><span class="hljs-selector-class">.net</span>. nstld<span class="hljs-selector-class">.verisign-grs</span><span class="hljs-selector-class">.com</span>. <span class="hljs-number">2018032802</span> <span class="hljs-number">1800</span> <span class="hljs-number">900</span> <span class="hljs-number">604800</span> <span class="hljs-number">86400</span></code></pre><p>
+
+This says: the authoritative server for the root zone is called
+<code>a.root-servers.net</code>. This name is however only used for diagnostics.
+Secondly, <a href="mailto:nstld@verisign-grs.com">nstld@verisign-grs.com</a> is the email address of the zone
+maintainer. Note that the <code>@</code> is replaced by a dot. Specifically, if the
+email address had been <code>nstld.maintainer@verisign-grs.com</code>, this would have
+been stored as nstld\\.maintainer.verisign-grs.com. This name would then
+still be 3 labels long, but the first one has a dot in it.
+
+</p><p>
+
+The following field, 2018032802, is a serial number.  Quite often, but by
+all means not always, this is a date in proper order (YYYYMMDD), followed by
+two digits indicating updates over the day.  This serial number is used for
+replication purposes, as are the following 3 numbers.
+
+</p><p>
+
+Zones are hosted on 'masters`. Meanwhile, 'slave' servers poll the master
+for updates, and pull down a new zone if they see new contents, as noted by
+an increase in serial number.
+
+</p><p>
+
+The numbers 1800 and 900 describe how often a zone should be checked for
+updates (twice an hour), and that if an update check fails it should be
+repeated after 900 seconds.  Finally, 604800 says that if a master server
+was unreachable for over a week, the zone should be deleted from the slave.
+This is not a popular feature.
+
+</p><p>
+
+The final number, 86400, denotes that if a response says a name or RRSET
+does not exist, it will continue to not exist for the next day, and that
+this knowledge may be cached.
+
+</p>
+<a class="target" name="replication">&nbsp;</a><a class="target" name="replication">&nbsp;</a><a class="target" name="toc7">&nbsp;</a><h1>Replication</h1>
+<p>
+
+An authoritative server can serve the entire contents of a zone over TCP and
+this is called a zone transfer or AXFR. A “slave server” can request such an
+AXFR and then also serve the contents of the zone.
+
+</p><p>
+
+Master servers typically restrict AXFR access to specific IP addresses.  A
+slave need not necessarily be known to the master as a slave - as long as it
+has AXFR access, it can retrieve the zone.
+
+</p><p>
+
+Zone transfers proceed over TCP, and every zone transfer consists of one or
+more DNS messages. Much as TCP has no datagram functionality to denote the
+begin and end of a message, neither does DNS over TCP. So individual
+messages are prefixed with a 16 bit network endian length field. The stream
+of messages comprising a zone transfer in turn is terminated by the receipt
+of a second copy of the SOA record of a zone.
+
+</p><p>
+
+1034 and 1035 speak about zone transfers, but not in sufficient detail.
+Instead, consult <a href="https://tools.ietf.org/html/rfc5936">RFC 5936</a> and
+disregard anything found in 1034, 1035 and even 2181 about AXFR.
+
+</p><p>
+
+Note that <a href="https://tools.ietf.org/html/rfc1982">RFC 1982</a> describes in
+exhaustive detail how serial numbers should be compared. The SOA serial
+number is an indication on if one zone is newer than the other. RFC 1982
+describes how to deal with 32-bit wraps.
+
+</p>
+<a class="target" name="notification">&nbsp;</a><a class="target" name="replication/notification">&nbsp;</a><a class="target" name="toc7.1">&nbsp;</a><h2>Notification</h2>
+<p>
+
+As outlined above in the description of the SOA record, slave servers
+periodically check the master server to find out if there have been any
+updates that need to be retrieved.
+
+</p><p>
+
+Since this periodic check may be far in the future, optionally master
+servers can send out notifications when they load new zone data.
+
+</p><p>
+
+Notification was not in 1034/1035 and is described well in <a href="https://tools.ietf.org/html/rfc1996">RFC
+1996</a>.
+
+</p><p>
+
+In short, a notification is a regular DNS message, sent out as a query, but
+then with OPCODE=5. Notifications are repeated until acknowledged by the
+slave server.
+
+</p>
+<a class="target" name="tbc">&nbsp;</a><a class="target" name="tbc">&nbsp;</a><a class="target" name="toc8">&nbsp;</a><h1>TBC</h1>
+<p>
+
+
+</p></span><div id="mdContextMenu" style="visibility:hidden"></div><div class="markdeepFooter"><i>formatted by <a href="https://casual-effects.com/markdeep" style="color:#999">Markdeep&nbsp;1.16&nbsp;&nbsp;</a></i><div style="display:inline-block;font-size:13px;font-family:'Times New Roman',serif;vertical-align:middle;transform:translate(-3px,-1px)rotate(135deg);">✒</div></div></body></html>

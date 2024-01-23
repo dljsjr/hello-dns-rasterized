@@ -1,0 +1,981 @@
+<html><head><meta charset="utf-8" emacsmode="-*- markdown -*-">
+                            </head><body id="md" style="visibility: visible;"><meta charset="UTF-8"><meta http-equiv="content-type" content="text/html;charset=UTF-8"><meta name="viewport" content="width=600, initial-scale=1"><style>body{max-width:680px;margin:auto;padding:20px;text-align:justify;line-height:140%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased;color:#222;font-family:Palatino,Georgia,"Times New Roman",serif}</style><style>@media print{*{-webkit-print-color-adjust:exact;text-shadow:none !important}}body{counter-reset: h1 paragraph line item list-item}@page{margin:0;size:auto}#mdContextMenu{position:absolute;background:#383838;cursor:default;border:1px solid #999;color:#fff;padding:4px 0px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",sans-serif;font-size:85%;font-weight:600;border-radius:4px;box-shadow:0px 3px 10px rgba(0,0,0,35%)}#mdContextMenu div{padding:0px 20px}#mdContextMenu div:hover{background:#1659d1}.md code,.md pre{font-family:Menlo,Consolas,monospace;font-size:85%;text-align:left;line-height:140%}.md .mediumToc code,.md longToc code,.md .shortToc code,.md h1 code,.md h2 code,.md h3 code,.md h4 code,.md h5 code,.md h6 code{font-size:unset}.md div.title{font-size:26px;font-weight:800;line-height:120%;text-align:center}.md div.afterTitles{height:10px}.md div.subtitle{text-align:center}.md iframe.textinsert, .md object.textinsert,.md iframe:not(.markdeep){display:block;margin-top:10px;margin-bottom:10px;width:100%;height:75vh;border:1px solid #000;border-radius:4px;background:#f5f5f4}.md .image{display:inline-block}.md img{max-width:100%;page-break-inside:avoid}.md li{text-align:left;text-indent:0}.md pre.listing {width:100%;tab-size:4;-moz-tab-size:4;-o-tab-size:4;counter-reset:line;overflow-x:auto;resize:horizontal}.md pre.listing .linenumbers span.line:before{width:30px;margin-left:-28px;font-size:80%;text-align:right;counter-increment:line;content:counter(line);display:inline-block;padding-right:13px;margin-right:8px;color:#ccc}.md div.tilde{margin:20px 0 -10px;text-align:center}.md .imagecaption,.md .tablecaption,.md .listingcaption{display:inline-block;margin:7px 5px 12px;text-align:justify;font-style:italic}.md img.pixel{image-rendering:-moz-crisp-edges;image-rendering:pixelated}.md blockquote.fancyquote{margin:25px 0 25px;text-align:left;line-height:160%}.md blockquote.fancyquote::before{content:"“";color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-right:6px;vertical-align:-0.3em}.md span.fancyquote{font-size:118%;color:#777;font-style:italic}.md span.fancyquote::after{content:"”";font-style:normal;color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-left:6px;vertical-align:-0.3em}.md blockquote.fancyquote .author{width:100%;margin-top:10px;display:inline-block;text-align:right}.md small{font-size:60%}.md big{font-size:150%}.md div.title,.md contents,.md .tocHeader,.md h1,.md h2,.md h3,.md h4,.md h5,.md h6,.md .shortTOC,.md .mediumTOC,.md .nonumberh1,.md .nonumberh2,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{font-family:Verdana,Helvetica,Arial,sans-serif;margin:13.4px 0 13.4px;padding:15px 0 3px;border-top:none;clear:both}.md .tocTop {display:none}.md h1,.md h2,.md h3,.md h4,.md h5,.md h6,.md .nonumberh1,.md .nonumberh2,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{page-break-after:avoid;break-after:avoid}.md svg.diagram{display:block;font-family:Menlo,Consolas,monospace;font-size:85%;text-align:center;stroke-linecap:round;stroke-width:2px;page-break-inside:avoid;stroke:#000;fill:#000}.md svg.diagram .opendot{fill:#fff}.md svg.diagram .shadeddot{fill:#CCC}.md svg.diagram .dotteddot{stroke:#000;stroke-dasharray:4;fill:none}.md svg.diagram text{stroke:none}@media print{@page{margin:1in 5mm;transform: scale(150%)}}@media print{.md .pagebreak{page-break-after:always;visibility:hidden}}.md a{font-family:Georgia,Palatino,'Times New Roman'}.md h1,.md .tocHeader,.md .nonumberh1{border-bottom:3px solid;font-size:20px;font-weight:bold;}.md h1,.md .nonumberh1{counter-reset:h2 h3 h4 h5 h6}.md h2,.md .nonumberh2{counter-reset:h3 h4 h5 h6;border-bottom:2px solid #999;color:#555;font-weight:bold;font-size:18px;}.md h3,.md h4,.md h5,.md h6,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{font-family:Verdana,Helvetica,Arial,sans-serif;color:#555;font-size:16px;}.md h3{counter-reset:h4 h5 h6}.md h4{counter-reset:h5 h6}.md h5{counter-reset:h6}.md div.table{margin:16px 0 16px 0}.md table{border-collapse:collapse;line-height:140%;page-break-inside:avoid}.md table.table{margin:auto}.md table.calendar{width:100%;margin:auto;font-size:11px;font-family:Verdana,Helvetica,Arial,sans-serif}.md table.calendar th{font-size:16px}.md .today{background:#ECF8FA}.md .calendar .parenthesized{color:#999;font-style:italic}.md table.table th{color:#FFF;background-color:#AAA;border:1px solid #888;padding:8px 15px 8px 15px}.md table.table td{padding:5px 15px 5px 15px;border:1px solid #888}.md table.table tr:nth-child(even){background:#EEE}.md pre.tilde{border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;padding: 5px 0 5px 20px;margin:0 0 0 0;background:#FCFCFC;page-break-inside:avoid}.md a.target{width:0px;height:0px;visibility:hidden;font-size:0px;display:inline-block}.md a:link, .md a:visited{color:#38A;text-decoration:none}.md a:link:hover{text-decoration:underline}.md dt{font-weight:700}.md dl>dd{margin-top:-8px; margin-bottom:8px}.md dl>table{margin:35px 0 30px}.md code{page-break-inside:avoid;} @media print{.md .listing code{white-space:pre-wrap}}.md .endnote{font-size:13px;line-height:15px;padding-left:10px;text-indent:-10px}.md .bib{padding-left:80px;text-indent:-80px;text-align:left}.markdeepFooter{font-size:9px;text-align:right;padding-top:80px;color:#999}.md .mediumTOC{float:right;font-size:12px;line-height:15px;border-left:1px solid #CCC;padding-left:15px;margin:15px 0px 15px 25px}.md .mediumTOC .level1{font-weight:600}.md .longTOC .level1{font-weight:600;display:block;padding-top:12px;margin:0 0 -20px}.md .shortTOC{text-align:center;font-weight:bold;margin-top:15px;font-size:14px}.md .img-attrib-container .img-attrib{font-size:50%;line-height:120%;writing-mode:vertical-rl;position:absolute;bottom:0;right:0;padding:8px 4px;color:#FFF;background-color:rgba(0,0,0,.3)}.md .img-attrib-container .img-attrib a{color:#FFF;text-decoration:none}.md .admonition{position:relative;margin:1em 0;padding:.4rem 1rem;border-radius:.2rem;border-left:2.5rem solid rgba(68,138,255,.4);background-color:rgba(68,138,255,.15);}.md .admonition-title{font-weight:bold;border-bottom:solid 1px rgba(68,138,255,.4);padding-bottom:4px;margin-bottom:4px;margin-left: -1rem;padding-left:1rem;margin-right:-1rem;border-color:rgba(68,138,255,.4)}.md .admonition.tip{border-left:2.5rem solid rgba(50,255,90,.4);background-color:rgba(50,255,90,.15)}.md .admonition.tip::before{content:"\24d8";font-weight:bold;font-size:150%;position:relative;top:3px;color:rgba(26,128,46,.8);left:-2.95rem;display:block;width:0;height:0}.md .admonition.tip>.admonition-title{border-color:rgba(50,255,90,.4)}.md .admonition.warn,.md .admonition.warning{border-left:2.5rem solid rgba(255,145,0,.4);background-color:rgba(255,145,0,.15)}.md .admonition.warn::before,.md .admonition.warning::before{content:"\26A0";font-weight:bold;font-size:150%;position:relative;top:2px;color:rgba(128,73,0,.8);left:-2.95rem;display:block;width:0;height:0}.md .admonition.warn>.admonition-title,.md .admonition.warning>.admonition-title{border-color:rgba(255,145,0,.4)}.md .admonition.error{border-left: 2.5rem solid rgba(255,23,68,.4);background-color:rgba(255,23,68,.15)}.md .admonition.error>.admonition-title{border-color:rgba(255,23,68,.4)}.md .admonition.error::before{content: "\2612";font-family:"Arial";font-size:200%;position:relative;color:rgba(128,12,34,.8);top:-2px;left:-3rem;display:block;width:0;height:0}.md .admonition p:last-child{margin-bottom:0}.md li.checked,.md li.unchecked{list-style:none;overflow:visible;text-indent:-1.2em}.md li.checked:before,.md li.unchecked:before{content:"\2611";display:block;float:left;width:1em;font-size:120%}.md li.unchecked:before{content:"\2610"}</style><style>.md h1::before {
+content:counter(h1) " ";
+counter-increment: h1;margin-right:10px}
+
+.md h2::before {
+content:counter(h1) "."counter(h2) " ";
+counter-increment: h2;margin-right:10px}
+
+.md h3::before {
+content:counter(h1) "."counter(h2) "."counter(h3) " ";
+counter-increment: h3;margin-right:10px}
+
+.md h4::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) " ";
+counter-increment: h4;margin-right:10px}
+
+.md h5::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) " ";
+counter-increment: h5;margin-right:10px}
+
+.md h6::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) "."counter(h6) " ";
+counter-increment: h6;margin-right:10px}
+
+</style><style>.hljs{display:block;overflow-x:auto;padding:0.5em;background:#fff;color:#000;-webkit-text-size-adjust:none}.hljs-comment{color:#006a00}.hljs-keyword{color:#02E}.hljs-literal,.nginx .hljs-title{color:#aa0d91}.method,.hljs-list .hljs-title,.hljs-tag .hljs-title,.setting .hljs-value,.hljs-winutils,.tex .hljs-command,.http .hljs-title,.hljs-request,.hljs-status,.hljs-name{color:#008}.hljs-envvar,.tex .hljs-special{color:#660}.hljs-string{color:#c41a16}.hljs-tag .hljs-value,.hljs-cdata,.hljs-filter .hljs-argument,.hljs-attr_selector,.apache .hljs-cbracket,.hljs-date,.hljs-regexp{color:#080}.hljs-sub .hljs-identifier,.hljs-pi,.hljs-tag,.hljs-tag .hljs-keyword,.hljs-decorator,.ini .hljs-title,.hljs-shebang,.hljs-prompt,.hljs-hexcolor,.hljs-rule .hljs-value,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-number,.css .hljs-function,.hljs-function .hljs-title,.coffeescript .hljs-attribute{color:#A0C}.hljs-function .hljs-title{font-weight:bold;color:#000}.hljs-class .hljs-title,.smalltalk .hljs-class,.hljs-type,.hljs-typename,.hljs-tag .hljs-attribute,.hljs-doctype,.hljs-class .hljs-id,.hljs-built_in,.setting,.hljs-params,.clojure .hljs-attribute{color:#5c2699}.hljs-variable{color:#3f6e74}.css .hljs-tag,.hljs-rule .hljs-property,.hljs-pseudo,.hljs-subst{color:#000}.css .hljs-class,.css .hljs-id{color:#9b703f}.hljs-value .hljs-important{color:#ff7700;font-weight:bold}.hljs-rule .hljs-keyword{color:#c5af75}.hljs-annotation,.apache .hljs-sqbracket,.nginx .hljs-built_in{color:#9b859d}.hljs-preprocessor,.hljs-preprocessor *,.hljs-pragma{color:#643820}.tex .hljs-formula{background-color:#eee;font-style:italic}.diff .hljs-header,.hljs-chunk{color:#808080;font-weight:bold}.diff .hljs-change{background-color:#bccff9}.hljs-addition{background-color:#baeeba}.hljs-deletion{background-color:#ffc8bd}.hljs-comment .hljs-doctag{font-weight:bold}.method .hljs-id{color:#000}</style><style>div.title { padding-top: 40px; } div.afterTitles { height: 15px; }</style><meta charset="utf-8" emacsmode="-*- markdown -*-">
+                            <span class="md"><p><title>A warm welcome to DNS</title></p><div class="title"> A warm welcome to DNS </div>
+
+<div class="afterTitles"></div>
+
+<p></p><p>
+
+Note: this page is part of the
+'<a href="/">hello-dns</a>' documentation effort.
+
+</p><p>
+
+In this section we will initially ignore optional extensions that were added
+to DNS later, specifically EDNS and DNSSEC.
+
+</p><p>
+
+This file corresponds roughly to the fundamental parts of RFCs 1034, 1035,
+2181, 2308, 3596, 4343, 5452, 6604, 7766 and 8020.
+
+</p><p>
+
+<strong class="asterisk">This page, which describes DNS basics, absolutely must be read from
+beginning to end in order for the rest of the documents (or DNS) to make
+sense.</strong>
+
+</p>
+<div class="longTOC"><div class="tocHeader">Contents</div><p><a href="#" class="tocTop">(Top)</a><br>
+<a href="#dnsbasics" class="level1"><span class="tocNumber">1&nbsp; </span>DNS Basics</a><br>
+&nbsp;&nbsp;<a href="#dnsbasics/rrsets" class="level2"><span class="tocNumber">1.1&nbsp; </span>RRSETs</a><br>
+&nbsp;&nbsp;<a href="#dnsbasics/zonefiles" class="level2"><span class="tocNumber">1.2&nbsp; </span>Zone files</a><br>
+&nbsp;&nbsp;<a href="#dnsbasics/dnsnames" class="level2"><span class="tocNumber">1.3&nbsp; </span>DNS Names</a><br>
+&nbsp;&nbsp;<a href="#dnsbasics/zones" class="level2"><span class="tocNumber">1.4&nbsp; </span>Zones</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#dnsbasics/zones/startofauthority" class="level3"><span class="tocNumber">1.4.1&nbsp; </span>Start of Authority</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#dnsbasics/zones/zonecuts" class="level3"><span class="tocNumber">1.4.2&nbsp; </span>Zone cuts</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#dnsbasics/zones/nsrecords" class="level3"><span class="tocNumber">1.4.3&nbsp; </span>NS Records</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#dnsbasics/zones/gluerecords" class="level3"><span class="tocNumber">1.4.4&nbsp; </span>Glue records</a><br>
+<a href="#furtheraspects" class="level1"><span class="tocNumber">2&nbsp; </span>Further aspects</a><br>
+&nbsp;&nbsp;<a href="#furtheraspects/cname" class="level2"><span class="tocNumber">2.1&nbsp; </span>CNAME</a><br>
+&nbsp;&nbsp;<a href="#furtheraspects/wildcards" class="level2"><span class="tocNumber">2.2&nbsp; </span>Wildcards</a><br>
+&nbsp;&nbsp;<a href="#furtheraspects/truncation" class="level2"><span class="tocNumber">2.3&nbsp; </span>Truncation</a><br>
+&nbsp;&nbsp;<a href="#furtheraspects/namesandnodesthatdonotexist" class="level2"><span class="tocNumber">2.4&nbsp; </span>Names and nodes that do not exist</a><br>
+&nbsp;&nbsp;<a href="#furtheraspects/querytypesthatarenotrrsettypes" class="level2"><span class="tocNumber">2.5&nbsp; </span>Query types that are not RRSET types</a><br>
+<a href="#that'sitforbasicdns!" class="level1"><span class="tocNumber">3&nbsp; </span>That's it for basic DNS!</a><br>
+&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading" class="level2"><span class="tocNumber">3.1&nbsp; </span>Further reading</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc1034/1035" class="level3"><span class="tocNumber">3.1.1&nbsp; </span>RFC 1034 / 1035</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc2181:“clarificationstothednsspecification”" class="level3"><span class="tocNumber">3.1.2&nbsp; </span>RFC 2181: “Clarifications to the DNS Specification”</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc2308:“negativecachingofdnsqueries(ncache)" class="level3"><span class="tocNumber">3.1.3&nbsp; </span>RFC 2308: “Negative caching of DNS Queries (NCACHE)</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc3596:“dnsextensionstosupportipversion6%22" class="level3"><span class="tocNumber">3.1.4&nbsp; </span>RFC 3596: “DNS Extensions to Support IP Version 6"</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc4343:“domainnamesystemcaseinsensitivityclarification”" class="level3"><span class="tocNumber">3.1.5&nbsp; </span>RFC 4343: “Domain Name System Case Insensitivity Clarification”</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc5452:“measuresformakingdnsmoreresilientagainstforgedanswers”" class="level3"><span class="tocNumber">3.1.6&nbsp; </span>RFC 5452: “Measures for Making DNS More Resilient against Forged Answers”</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc6604:“xnamercodeclarification”" class="level3"><span class="tocNumber">3.1.7&nbsp; </span>RFC 6604: “xNAME RCODE Clarification”</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc7766:dnstransportovertcp-implementationrequirements" class="level3"><span class="tocNumber">3.1.8&nbsp; </span>RFC 7766: DNS Transport over TCP - Implementation Requirements</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#that'sitforbasicdns!/furtherreading/rfc8020:nxdomain:therereallyisnothingunderneath" class="level3"><span class="tocNumber">3.1.9&nbsp; </span>RFC 8020: NXDOMAIN: There really is nothing underneath</a><br>
+</p></div><a class="target" name="dnsbasics">&nbsp;</a><a class="target" name="dnsbasics">&nbsp;</a><a class="target" name="toc1">&nbsp;</a><h1>DNS Basics</h1>
+<p>
+
+
+DNS is mostly used to serve IP addresses and mailserver details, but it can
+contain arbitrary data.  DNS is all about names.  Every name can have data
+of several <em class="asterisk">types</em>.  The most well known externally useful types are <em class="asterisk">A</em> for
+IPv4 addresses, <em class="asterisk">AAAA</em> for IPv6 addresses and <em class="asterisk">MX</em> for mailserver details.
+DNS also has types that have meaning for its own use, like <em class="asterisk">NS</em>, <em class="asterisk">CNAME</em> and
+<em class="asterisk">SOA</em>.
+
+</p><p>
+
+When we ask a DNS question we call this a <em class="asterisk">query</em>. We call the reply the
+<em class="asterisk">response</em>.  These queries and responses are contained in DNS messages. When
+UDP is used, the message is also the packet. Note that <a href="https://tools.ietf.org/html/rfc7766.txt">TCP support is
+mandatory</a> for DNS in 2018.
+
+</p><p>
+
+A DNS message has:
+
+</p><p>
+
+</p><ul>
+ <li class="asterisk">A header
+</li>
+ <li class="asterisk">A query name and query type
+</li>
+ <li class="asterisk">An answer section
+</li>
+ <li class="asterisk">An authority section
+</li>
+ <li class="asterisk">An additional section</li></ul>
+
+<p></p><p>
+
+In basic DNS, query messages should have empty answer, authority and
+additional sections.
+
+</p><p>
+
+The header has the following fields that are useful for queries and
+responses:
+
+</p><p>
+
+</p><ul>
+ <li class="asterisk">ID: a 16 bit identifier used as part of the process of matching queries to responses
+</li>
+ <li class="asterisk">QR: Set to 0 to identify a message as a query, 1 for a response
+</li>
+ <li class="asterisk">OPCODE: 0 for a standard query, other opcodes also exist
+</li>
+ <li class="asterisk">RD: Set to indicate that this question wants <em class="asterisk">recursion</em></li></ul>
+
+<p></p><p>
+
+Relevant for responses:
+
+</p><p>
+
+</p><ul>
+ <li class="asterisk">AA: This response has Authoritative Answers
+</li>
+ <li class="asterisk">RA: Recursive service was available
+</li>
+ <li class="asterisk">TC: Not all the required parts of the response fit in the UDP message
+</li>
+ <li class="asterisk">RCODE: Result code. 0 is ok, 2 is SERVFAIL, 3 is NXDOMAIN.</li></ul>
+
+<p></p><p>
+
+DNS queries are mostly sent over UDP, and UDP packets can easily be spoofed.
+To recognize the authentic response to a query it is important that the ID
+field is random or at least unpredictable.  This is however not enough
+protection, so the source port of a UDP DNS query <a href="https://tools.ietf.org/html/rfc5452#section-9">must also be
+unpredictable</a>.
+
+</p><p>
+
+DNS messages can also be sent over TCP/IP. Because TCP is not a datagram
+oriented protocol, each DNS message in TCP/IP is preceded by a 16 bit
+network endian length field.
+
+</p><p>
+
+DNS servers must listen on both UDP and TCP, port 53.
+
+</p><p>
+
+The header of a question for the IPv6 address of www.ietf.org looks like
+this:
+
+</p><p>
+
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="288" width="432" style="margin:0 auto 0 auto;"><g transform="translate(8,16 )">
+<path d="M 32,32 L 32,240 " style="fill:none;"></path>
+<path d="M 56,64 L 56,112 " style="fill:none;"></path>
+<path d="M 152,64 L 152,112 " style="fill:none;"></path>
+<path d="M 176,64 L 176,112 " style="fill:none;"></path>
+<path d="M 200,64 L 200,112 " style="fill:none;"></path>
+<path d="M 224,64 L 224,112 " style="fill:none;"></path>
+<path d="M 248,64 L 248,112 " style="fill:none;"></path>
+<path d="M 320,64 L 320,112 " style="fill:none;"></path>
+<path d="M 416,32 L 416,240 " style="fill:none;"></path>
+<path d="M 32,32 L 416,32 " style="fill:none;"></path>
+<path d="M 32,64 L 416,64 " style="fill:none;"></path>
+<path d="M 32,112 L 416,112 " style="fill:none;"></path>
+<path d="M 32,144 L 416,144 " style="fill:none;"></path>
+<path d="M 32,176 L 416,176 " style="fill:none;"></path>
+<path d="M 32,208 L 416,208 " style="fill:none;"></path>
+<path d="M 32,240 L 416,240 " style="fill:none;"></path>
+<g transform="translate(0,0)"><text text-anchor="middle" x="288" y="4">1</text><text text-anchor="middle" x="312" y="4">1</text><text text-anchor="middle" x="336" y="4">1</text><text text-anchor="middle" x="360" y="4">1</text><text text-anchor="middle" x="384" y="4">1</text><text text-anchor="middle" x="408" y="4">1</text><text text-anchor="middle" x="48" y="20">0</text><text text-anchor="middle" x="72" y="20">1</text><text text-anchor="middle" x="96" y="20">2</text><text text-anchor="middle" x="120" y="20">3</text><text text-anchor="middle" x="144" y="20">4</text><text text-anchor="middle" x="168" y="20">5</text><text text-anchor="middle" x="192" y="20">6</text><text text-anchor="middle" x="216" y="20">7</text><text text-anchor="middle" x="240" y="20">8</text><text text-anchor="middle" x="264" y="20">9</text><text text-anchor="middle" x="288" y="20">0</text><text text-anchor="middle" x="312" y="20">1</text><text text-anchor="middle" x="336" y="20">2</text><text text-anchor="middle" x="360" y="20">3</text><text text-anchor="middle" x="384" y="20">4</text><text text-anchor="middle" x="408" y="20">5</text><text text-anchor="middle" x="216" y="52">I</text><text text-anchor="middle" x="224" y="52">D</text><text text-anchor="middle" x="240" y="52">=</text><text text-anchor="middle" x="256" y="52">r</text><text text-anchor="middle" x="264" y="52">a</text><text text-anchor="middle" x="272" y="52">n</text><text text-anchor="middle" x="280" y="52">d</text><text text-anchor="middle" x="288" y="52">o</text><text text-anchor="middle" x="296" y="52">m</text><text text-anchor="middle" x="312" y="52">1</text><text text-anchor="middle" x="320" y="52">6</text><text text-anchor="middle" x="336" y="52">b</text><text text-anchor="middle" x="344" y="52">i</text><text text-anchor="middle" x="352" y="52">t</text><text text-anchor="middle" x="360" y="52">s</text><text text-anchor="middle" x="40" y="84">Q</text><text text-anchor="middle" x="48" y="84">R</text><text text-anchor="middle" x="88" y="84">O</text><text text-anchor="middle" x="96" y="84">p</text><text text-anchor="middle" x="104" y="84">c</text><text text-anchor="middle" x="112" y="84">o</text><text text-anchor="middle" x="120" y="84">d</text><text text-anchor="middle" x="128" y="84">e</text><text text-anchor="middle" x="160" y="84">A</text><text text-anchor="middle" x="168" y="84">A</text><text text-anchor="middle" x="184" y="84">T</text><text text-anchor="middle" x="192" y="84">C</text><text text-anchor="middle" x="208" y="84">R</text><text text-anchor="middle" x="216" y="84">D</text><text text-anchor="middle" x="232" y="84">R</text><text text-anchor="middle" x="240" y="84">A</text><text text-anchor="middle" x="280" y="84">Z</text><text text-anchor="middle" x="352" y="84">R</text><text text-anchor="middle" x="360" y="84">C</text><text text-anchor="middle" x="368" y="84">O</text><text text-anchor="middle" x="376" y="84">D</text><text text-anchor="middle" x="384" y="84">E</text><text text-anchor="middle" x="40" y="100">0</text><text text-anchor="middle" x="112" y="100">0</text><text text-anchor="middle" x="160" y="100">0</text><text text-anchor="middle" x="192" y="100">0</text><text text-anchor="middle" x="216" y="100">0</text><text text-anchor="middle" x="232" y="100">0</text><text text-anchor="middle" x="280" y="100">0</text><text text-anchor="middle" x="368" y="100">0</text><text text-anchor="middle" x="200" y="132">Q</text><text text-anchor="middle" x="208" y="132">D</text><text text-anchor="middle" x="216" y="132">C</text><text text-anchor="middle" x="224" y="132">O</text><text text-anchor="middle" x="232" y="132">U</text><text text-anchor="middle" x="240" y="132">N</text><text text-anchor="middle" x="248" y="132">T</text><text text-anchor="middle" x="264" y="132">=</text><text text-anchor="middle" x="280" y="132">1</text><text text-anchor="middle" x="200" y="164">A</text><text text-anchor="middle" x="208" y="164">N</text><text text-anchor="middle" x="216" y="164">C</text><text text-anchor="middle" x="224" y="164">O</text><text text-anchor="middle" x="232" y="164">U</text><text text-anchor="middle" x="240" y="164">N</text><text text-anchor="middle" x="248" y="164">T</text><text text-anchor="middle" x="264" y="164">=</text><text text-anchor="middle" x="280" y="164">0</text><text text-anchor="middle" x="200" y="196">N</text><text text-anchor="middle" x="208" y="196">S</text><text text-anchor="middle" x="216" y="196">C</text><text text-anchor="middle" x="224" y="196">O</text><text text-anchor="middle" x="232" y="196">U</text><text text-anchor="middle" x="240" y="196">N</text><text text-anchor="middle" x="248" y="196">T</text><text text-anchor="middle" x="264" y="196">=</text><text text-anchor="middle" x="280" y="196">0</text><text text-anchor="middle" x="200" y="228">A</text><text text-anchor="middle" x="208" y="228">R</text><text text-anchor="middle" x="216" y="228">C</text><text text-anchor="middle" x="224" y="228">O</text><text text-anchor="middle" x="232" y="228">U</text><text text-anchor="middle" x="240" y="228">N</text><text text-anchor="middle" x="248" y="228">T</text><text text-anchor="middle" x="264" y="228">=</text><text text-anchor="middle" x="280" y="228">0</text></g></g></svg>
+
+</p><p>
+
+Note that we did not spend time on field Z, this is because it is defined to
+be 0 at all times.  This packet does not request recursion.  QDCOUNT = 1
+means there is 1 question.  In theory DNS supported several questions in one
+message, but this has not been implemented.  ANCOUNT, NSCOUNT and ARCOUNT
+are all zero, indicating there are no answers in this question packet.
+
+</p><p>
+
+Here is the actual question:
+
+</p><p>
+
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="352" width="440" style="margin:0 auto 0 auto;"><g transform="translate(8,16 )">
+<path d="M 32,32 L 32,320 " style="fill:none;"></path>
+<path d="M 224,32 L 224,320 " style="fill:none;"></path>
+<path d="M 416,32 L 416,320 " style="fill:none;"></path>
+<path d="M 32,32 L 416,32 " style="fill:none;"></path>
+<path d="M 32,64 L 416,64 " style="fill:none;"></path>
+<path d="M 32,96 L 416,96 " style="fill:none;"></path>
+<path d="M 32,128 L 416,128 " style="fill:none;"></path>
+<path d="M 32,160 L 416,160 " style="fill:none;"></path>
+<path d="M 32,192 L 416,192 " style="fill:none;"></path>
+<path d="M 32,224 L 416,224 " style="fill:none;"></path>
+<path d="M 32,256 L 416,256 " style="fill:none;"></path>
+<path d="M 32,288 L 416,288 " style="fill:none;"></path>
+<path d="M 32,320 L 416,320 " style="fill:none;"></path>
+<g transform="translate(0,0)"><text text-anchor="middle" x="288" y="4">1</text><text text-anchor="middle" x="312" y="4">1</text><text text-anchor="middle" x="336" y="4">1</text><text text-anchor="middle" x="360" y="4">1</text><text text-anchor="middle" x="384" y="4">1</text><text text-anchor="middle" x="408" y="4">1</text><text text-anchor="middle" x="48" y="20">0</text><text text-anchor="middle" x="72" y="20">1</text><text text-anchor="middle" x="96" y="20">2</text><text text-anchor="middle" x="120" y="20">3</text><text text-anchor="middle" x="144" y="20">4</text><text text-anchor="middle" x="168" y="20">5</text><text text-anchor="middle" x="192" y="20">6</text><text text-anchor="middle" x="216" y="20">7</text><text text-anchor="middle" x="240" y="20">8</text><text text-anchor="middle" x="264" y="20">9</text><text text-anchor="middle" x="288" y="20">0</text><text text-anchor="middle" x="312" y="20">1</text><text text-anchor="middle" x="336" y="20">2</text><text text-anchor="middle" x="360" y="20">3</text><text text-anchor="middle" x="384" y="20">4</text><text text-anchor="middle" x="408" y="20">5</text><text text-anchor="middle" x="128" y="52">3</text><text text-anchor="middle" x="336" y="52">w</text><text text-anchor="middle" x="128" y="84">w</text><text text-anchor="middle" x="336" y="84">w</text><text text-anchor="middle" x="128" y="116">4</text><text text-anchor="middle" x="336" y="116">i</text><text text-anchor="middle" x="128" y="148">e</text><text text-anchor="middle" x="336" y="148">t</text><text text-anchor="middle" x="128" y="180">f</text><text text-anchor="middle" x="336" y="180">3</text><text text-anchor="middle" x="128" y="212">о</text><text text-anchor="middle" x="336" y="212">r</text><text text-anchor="middle" x="128" y="244">g</text><text text-anchor="middle" x="336" y="244">0</text><text text-anchor="middle" x="128" y="276">0</text><text text-anchor="middle" x="328" y="276">2</text><text text-anchor="middle" x="336" y="276">8</text><text text-anchor="middle" x="128" y="308">0</text><text text-anchor="middle" x="336" y="308">1</text></g></g></svg>
+
+</p><p>
+
+This consists of the 'www.ietf.org' encoded in DNS wire format (for which
+see below), followed by a 16 bit type field.  For AAAA, which denotes the
+IPv6 address, this is 28.  This is then followed by the 'class' of the
+question.  It was originally intended that DNS records would exist in
+different 'classes', but the semantics of this were not specified completely
+and it was not really implemented.  For now, always set class to 1.
+
+</p><p>
+
+The query name, type and class are also called 'qname', 'qtype' and 'qclass'
+respectively.
+
+</p><p>
+
+Of specific note is the somewhat unusual way the name 'www.ietf.org' is
+serialized in DNS.  'www.ietf.org' consists of 3 'labels' of lengths 3, 4
+and 3 respectively.  In DNS messages, this is encoded as the value 3, then
+www, then the value 4, then ietf, then 3 followed by org.  Then there is a
+trailing 0 which denotes this is the end.
+
+</p><p>
+
+This format is unusual, but has several highly attractive properties. For
+example, it is binary safe and it needs no escaping. When writing DNS
+software, it may be tempting to pass DNS names around as “ASCII”. This then
+leads to escaping and unescaping code in lots of places. It is highly
+recommended to use the native DNS encoding to store DNS names. This will
+save a lot of pain when processing DNS names with spaces or dots in them.
+
+</p><p>
+
+Finally, DNS queries are
+<a href="https://tools.ietf.org/html/rfc4343">case-insensitive</a>.  This however is
+defined rather mechanically, and limited to ASCII.  Operators do not need to know that in some
+encodings a Ü is equivalent to ü when compared case insensitively.
+For DNS purposes, the fifth bit (0×20) is ignored when comparing octets
+within a-z and A-Z.
+
+</p><p>
+
+Note that individual labels of a name may only be 63 octets long.
+
+</p><p>
+
+Next up, a DNS response. Note that this again is a DNS message, and it looks
+a lot like the original DNS query. Here is the beginning of a response:
+
+</p><p>
+
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="560" width="512" style="margin:0 auto 0 auto;"><g transform="translate(8,16 )">
+<path d="M 32,32 L 32,528 " style="fill:none;"></path>
+<path d="M 56,64 L 56,112 " style="fill:none;"></path>
+<path d="M 152,64 L 152,112 " style="fill:none;"></path>
+<path d="M 176,64 L 176,112 " style="fill:none;"></path>
+<path d="M 200,64 L 200,112 " style="fill:none;"></path>
+<path d="M 224,64 L 224,112 " style="fill:none;"></path>
+<path d="M 224,240 L 224,528 " style="fill:none;"></path>
+<path d="M 248,64 L 248,112 " style="fill:none;"></path>
+<path d="M 320,64 L 320,112 " style="fill:none;"></path>
+<path d="M 416,32 L 416,528 " style="fill:none;"></path>
+<path d="M 32,32 L 416,32 " style="fill:none;"></path>
+<path d="M 32,64 L 416,64 " style="fill:none;"></path>
+<path d="M 32,112 L 416,112 " style="fill:none;"></path>
+<path d="M 32,144 L 416,144 " style="fill:none;"></path>
+<path d="M 32,176 L 416,176 " style="fill:none;"></path>
+<path d="M 32,208 L 416,208 " style="fill:none;"></path>
+<path d="M 32,240 L 416,240 " style="fill:none;"></path>
+<path d="M 32,272 L 416,272 " style="fill:none;"></path>
+<path d="M 32,304 L 416,304 " style="fill:none;"></path>
+<path d="M 32,336 L 416,336 " style="fill:none;"></path>
+<path d="M 32,368 L 416,368 " style="fill:none;"></path>
+<path d="M 32,400 L 416,400 " style="fill:none;"></path>
+<path d="M 32,432 L 416,432 " style="fill:none;"></path>
+<path d="M 32,464 L 416,464 " style="fill:none;"></path>
+<path d="M 32,496 L 416,496 " style="fill:none;"></path>
+<path d="M 32,528 L 416,528 " style="fill:none;"></path>
+<g transform="translate(0,0)"><text text-anchor="middle" x="288" y="4">1</text><text text-anchor="middle" x="312" y="4">1</text><text text-anchor="middle" x="336" y="4">1</text><text text-anchor="middle" x="360" y="4">1</text><text text-anchor="middle" x="384" y="4">1</text><text text-anchor="middle" x="408" y="4">1</text><text text-anchor="middle" x="48" y="20">0</text><text text-anchor="middle" x="72" y="20">1</text><text text-anchor="middle" x="96" y="20">2</text><text text-anchor="middle" x="120" y="20">3</text><text text-anchor="middle" x="144" y="20">4</text><text text-anchor="middle" x="168" y="20">5</text><text text-anchor="middle" x="192" y="20">6</text><text text-anchor="middle" x="216" y="20">7</text><text text-anchor="middle" x="240" y="20">8</text><text text-anchor="middle" x="264" y="20">9</text><text text-anchor="middle" x="288" y="20">0</text><text text-anchor="middle" x="312" y="20">1</text><text text-anchor="middle" x="336" y="20">2</text><text text-anchor="middle" x="360" y="20">3</text><text text-anchor="middle" x="384" y="20">4</text><text text-anchor="middle" x="408" y="20">5</text><text text-anchor="middle" x="176" y="52">I</text><text text-anchor="middle" x="184" y="52">D</text><text text-anchor="middle" x="200" y="52">=</text><text text-anchor="middle" x="216" y="52">s</text><text text-anchor="middle" x="224" y="52">a</text><text text-anchor="middle" x="232" y="52">m</text><text text-anchor="middle" x="240" y="52">e</text><text text-anchor="middle" x="256" y="52">r</text><text text-anchor="middle" x="264" y="52">a</text><text text-anchor="middle" x="272" y="52">n</text><text text-anchor="middle" x="280" y="52">d</text><text text-anchor="middle" x="288" y="52">o</text><text text-anchor="middle" x="296" y="52">m</text><text text-anchor="middle" x="312" y="52">1</text><text text-anchor="middle" x="320" y="52">6</text><text text-anchor="middle" x="336" y="52">b</text><text text-anchor="middle" x="344" y="52">i</text><text text-anchor="middle" x="352" y="52">t</text><text text-anchor="middle" x="360" y="52">s</text><text text-anchor="middle" x="40" y="84">Q</text><text text-anchor="middle" x="48" y="84">R</text><text text-anchor="middle" x="88" y="84">O</text><text text-anchor="middle" x="96" y="84">p</text><text text-anchor="middle" x="104" y="84">c</text><text text-anchor="middle" x="112" y="84">o</text><text text-anchor="middle" x="120" y="84">d</text><text text-anchor="middle" x="128" y="84">e</text><text text-anchor="middle" x="160" y="84">A</text><text text-anchor="middle" x="168" y="84">A</text><text text-anchor="middle" x="184" y="84">T</text><text text-anchor="middle" x="192" y="84">C</text><text text-anchor="middle" x="208" y="84">R</text><text text-anchor="middle" x="216" y="84">D</text><text text-anchor="middle" x="232" y="84">R</text><text text-anchor="middle" x="240" y="84">A</text><text text-anchor="middle" x="280" y="84">Z</text><text text-anchor="middle" x="352" y="84">R</text><text text-anchor="middle" x="360" y="84">C</text><text text-anchor="middle" x="368" y="84">O</text><text text-anchor="middle" x="376" y="84">D</text><text text-anchor="middle" x="384" y="84">E</text><text text-anchor="middle" x="40" y="100">1</text><text text-anchor="middle" x="112" y="100">0</text><text text-anchor="middle" x="168" y="100">1</text><text text-anchor="middle" x="192" y="100">0</text><text text-anchor="middle" x="216" y="100">0</text><text text-anchor="middle" x="240" y="100">0</text><text text-anchor="middle" x="280" y="100">0</text><text text-anchor="middle" x="368" y="100">0</text><text text-anchor="middle" x="200" y="132">Q</text><text text-anchor="middle" x="208" y="132">D</text><text text-anchor="middle" x="216" y="132">C</text><text text-anchor="middle" x="224" y="132">O</text><text text-anchor="middle" x="232" y="132">U</text><text text-anchor="middle" x="240" y="132">N</text><text text-anchor="middle" x="248" y="132">T</text><text text-anchor="middle" x="264" y="132">=</text><text text-anchor="middle" x="280" y="132">1</text><text text-anchor="middle" x="200" y="164">A</text><text text-anchor="middle" x="208" y="164">N</text><text text-anchor="middle" x="216" y="164">C</text><text text-anchor="middle" x="224" y="164">O</text><text text-anchor="middle" x="232" y="164">U</text><text text-anchor="middle" x="240" y="164">N</text><text text-anchor="middle" x="248" y="164">T</text><text text-anchor="middle" x="264" y="164">=</text><text text-anchor="middle" x="280" y="164">1</text><text text-anchor="middle" x="200" y="196">N</text><text text-anchor="middle" x="208" y="196">S</text><text text-anchor="middle" x="216" y="196">C</text><text text-anchor="middle" x="224" y="196">O</text><text text-anchor="middle" x="232" y="196">U</text><text text-anchor="middle" x="240" y="196">N</text><text text-anchor="middle" x="248" y="196">T</text><text text-anchor="middle" x="264" y="196">=</text><text text-anchor="middle" x="280" y="196">0</text><text text-anchor="middle" x="200" y="228">A</text><text text-anchor="middle" x="208" y="228">R</text><text text-anchor="middle" x="216" y="228">C</text><text text-anchor="middle" x="224" y="228">O</text><text text-anchor="middle" x="232" y="228">U</text><text text-anchor="middle" x="240" y="228">N</text><text text-anchor="middle" x="248" y="228">T</text><text text-anchor="middle" x="264" y="228">=</text><text text-anchor="middle" x="280" y="228">0</text><text text-anchor="middle" x="128" y="260">3</text><text text-anchor="middle" x="336" y="260">w</text><text text-anchor="middle" x="128" y="292">w</text><text text-anchor="middle" x="336" y="292">w</text><text text-anchor="middle" x="128" y="324">4</text><text text-anchor="middle" x="336" y="324">i</text><text text-anchor="middle" x="128" y="356">e</text><text text-anchor="middle" x="336" y="356">t</text><text text-anchor="middle" x="128" y="388">f</text><text text-anchor="middle" x="336" y="388">3</text><text text-anchor="middle" x="128" y="420">о</text><text text-anchor="middle" x="336" y="420">r</text><text text-anchor="middle" x="128" y="452">g</text><text text-anchor="middle" x="336" y="452">0</text><text text-anchor="middle" x="128" y="484">0</text><text text-anchor="middle" x="328" y="484">2</text><text text-anchor="middle" x="336" y="484">8</text><text text-anchor="middle" x="352" y="484">(</text><text text-anchor="middle" x="360" y="484">=</text><text text-anchor="middle" x="376" y="484">0</text><text text-anchor="middle" x="384" y="484">x</text><text text-anchor="middle" x="392" y="484">1</text><text text-anchor="middle" x="400" y="484">c</text><text text-anchor="middle" x="408" y="484">)</text><text text-anchor="middle" x="128" y="516">0</text><text text-anchor="middle" x="336" y="516">1</text></g></g></svg>
+
+</p><p>
+
+Note that QR is now set to 1 to denote a response.  The 'AA' bit was set
+because this answer came from a server authoritative for this name.
+
+</p><p>
+
+In addition, ANCOUNT is now set to '1', indicating a single answer is to be
+found in the message, immediately after the original question, which has been
+repeated from the query message.
+
+</p><p>
+
+To recognize the right response, check that the ID field is the same as in the
+query, make sure the answer arrives on the right source port and that the
+query name and type match up with the original query. In addition, make sure
+not to send out more than one equivalent query when still waiting for the
+response, as doing so opens a security hole.
+
+</p><p>
+
+After the header and the original question we find the answer:
+
+</p><p>
+
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="496" width="432" style="margin:0 auto 0 auto;"><g transform="translate(8,16 )">
+<path d="M 32,32 L 32,464 " style="fill:none;"></path>
+<path d="M 224,32 L 224,128 " style="fill:none;"></path>
+<path d="M 224,208 L 224,464 " style="fill:none;"></path>
+<path d="M 416,32 L 416,464 " style="fill:none;"></path>
+<path d="M 32,32 L 416,32 " style="fill:none;"></path>
+<path d="M 32,64 L 416,64 " style="fill:none;"></path>
+<path d="M 32,96 L 416,96 " style="fill:none;"></path>
+<path d="M 32,128 L 416,128 " style="fill:none;"></path>
+<path d="M 32,176 L 416,176 " style="fill:none;"></path>
+<path d="M 32,208 L 408,208 " style="fill:none;"></path>
+<path d="M 32,240 L 416,240 " style="fill:none;"></path>
+<path d="M 32,272 L 416,272 " style="fill:none;"></path>
+<path d="M 32,304 L 416,304 " style="fill:none;"></path>
+<path d="M 32,336 L 416,336 " style="fill:none;"></path>
+<path d="M 32,368 L 416,368 " style="fill:none;"></path>
+<path d="M 32,400 L 416,400 " style="fill:none;"></path>
+<path d="M 32,432 L 416,432 " style="fill:none;"></path>
+<path d="M 32,464 L 416,464 " style="fill:none;"></path>
+<g transform="translate(0,0)"><text text-anchor="middle" x="288" y="4">1</text><text text-anchor="middle" x="312" y="4">1</text><text text-anchor="middle" x="336" y="4">1</text><text text-anchor="middle" x="360" y="4">1</text><text text-anchor="middle" x="384" y="4">1</text><text text-anchor="middle" x="408" y="4">1</text><text text-anchor="middle" x="48" y="20">0</text><text text-anchor="middle" x="72" y="20">1</text><text text-anchor="middle" x="96" y="20">2</text><text text-anchor="middle" x="120" y="20">3</text><text text-anchor="middle" x="144" y="20">4</text><text text-anchor="middle" x="168" y="20">5</text><text text-anchor="middle" x="192" y="20">6</text><text text-anchor="middle" x="216" y="20">7</text><text text-anchor="middle" x="240" y="20">8</text><text text-anchor="middle" x="264" y="20">9</text><text text-anchor="middle" x="288" y="20">0</text><text text-anchor="middle" x="312" y="20">1</text><text text-anchor="middle" x="336" y="20">2</text><text text-anchor="middle" x="360" y="20">3</text><text text-anchor="middle" x="384" y="20">4</text><text text-anchor="middle" x="408" y="20">5</text><text text-anchor="middle" x="128" y="52">0</text><text text-anchor="middle" x="136" y="52">x</text><text text-anchor="middle" x="144" y="52">c</text><text text-anchor="middle" x="152" y="52">0</text><text text-anchor="middle" x="312" y="52">0</text><text text-anchor="middle" x="320" y="52">x</text><text text-anchor="middle" x="328" y="52">0</text><text text-anchor="middle" x="336" y="52">c</text><text text-anchor="middle" x="144" y="84">0</text><text text-anchor="middle" x="152" y="84">0</text><text text-anchor="middle" x="328" y="84">2</text><text text-anchor="middle" x="336" y="84">8</text><text text-anchor="middle" x="144" y="116">0</text><text text-anchor="middle" x="152" y="116">0</text><text text-anchor="middle" x="328" y="116">0</text><text text-anchor="middle" x="336" y="116">1</text><text text-anchor="middle" x="208" y="148">T</text><text text-anchor="middle" x="216" y="148">T</text><text text-anchor="middle" x="224" y="148">L</text><text text-anchor="middle" x="240" y="148">=</text><text text-anchor="middle" x="256" y="148">3</text><text text-anchor="middle" x="264" y="148">6</text><text text-anchor="middle" x="272" y="148">0</text><text text-anchor="middle" x="280" y="148">0</text><text text-anchor="middle" x="192" y="196">R</text><text text-anchor="middle" x="200" y="196">D</text><text text-anchor="middle" x="208" y="196">L</text><text text-anchor="middle" x="216" y="196">E</text><text text-anchor="middle" x="224" y="196">N</text><text text-anchor="middle" x="232" y="196">G</text><text text-anchor="middle" x="240" y="196">T</text><text text-anchor="middle" x="248" y="196">H</text><text text-anchor="middle" x="264" y="196">=</text><text text-anchor="middle" x="280" y="196">1</text><text text-anchor="middle" x="288" y="196">6</text><text text-anchor="middle" x="144" y="228">2</text><text text-anchor="middle" x="152" y="228">4</text><text text-anchor="middle" x="328" y="228">0</text><text text-anchor="middle" x="336" y="228">0</text><text text-anchor="middle" x="144" y="260">c</text><text text-anchor="middle" x="152" y="260">b</text><text text-anchor="middle" x="328" y="260">0</text><text text-anchor="middle" x="336" y="260">0</text><text text-anchor="middle" x="144" y="292">2</text><text text-anchor="middle" x="152" y="292">0</text><text text-anchor="middle" x="328" y="292">4</text><text text-anchor="middle" x="336" y="292">8</text><text text-anchor="middle" x="144" y="324">0</text><text text-anchor="middle" x="152" y="324">0</text><text text-anchor="middle" x="328" y="324">0</text><text text-anchor="middle" x="336" y="324">1</text><text text-anchor="middle" x="144" y="356">0</text><text text-anchor="middle" x="152" y="356">0</text><text text-anchor="middle" x="328" y="356">0</text><text text-anchor="middle" x="336" y="356">0</text><text text-anchor="middle" x="144" y="388">0</text><text text-anchor="middle" x="152" y="388">0</text><text text-anchor="middle" x="328" y="388">0</text><text text-anchor="middle" x="336" y="388">0</text><text text-anchor="middle" x="144" y="420">6</text><text text-anchor="middle" x="152" y="420">8</text><text text-anchor="middle" x="328" y="420">1</text><text text-anchor="middle" x="336" y="420">4</text><text text-anchor="middle" x="144" y="452">0</text><text text-anchor="middle" x="152" y="452">0</text><text text-anchor="middle" x="328" y="452">5</text><text text-anchor="middle" x="336" y="452">5</text></g></g></svg>
+
+</p><p>
+
+The first two bytes (<code>0xc0 0x0c</code>) look rather mysterious.  When DNS was
+created, 512 octets was considered the maximum size of a UDP datagram and
+thus the maximum size of a DNS message transported without using the (then
+slow) TCP protocol.
+
+</p><p>
+
+In order to squeeze as much information as possible into the 512 bytes, DNS
+names can (and often MUST) be compressed.  The details of this compression
+are arcane and easy to get wrong, leading to infinite loops or buffer
+overflows.  So tread very carefully. If you remember one thing, make sure
+that a pointer always has to go to a lower position in the packet. Also
+beware of signed/unsigned arithmetic.
+
+</p><p>
+
+In this case, the DNS name of the answer is encoded is <code>0xc0 0x0c</code>.  The c0
+part has the two most significant bits set, indicating that the following
+6+8 bits are a pointer to somewhere earlier in the message.  In this case,
+this points to position 12 (= <code>0x0c</code>) within the packet, which is immediately
+after the DNS header.  There we find 'www.ietf.org'.
+
+</p><p>
+
+So what this means is that the answer about the DNS name <code>www.ietf.org</code> is
+also called <code>www.ietf.org</code>.
+
+</p><p>
+
+This is then followed in the packet by '28', which denotes AAAA (IPv6), and
+the usual 'class' of 1. Then a whole 32 bits are devoted to the Time To Live
+of this record, followed by a 16 bits length field. Since this is an IPv6
+address, the actual answer payload length is 16 bytes (or 128 bits).
+
+</p><p>
+
+This is then followed by the binary representation of the current IPv6
+address of www.ietf.org, 2400:cb00:2048:1::6814:55.
+
+</p><p>
+
+If there had been further answers, these would follow this first one, and
+the ANCOUNT would have been higher than 1. If there had been data in the
+'authoritative' and 'additional' sections, that would follow here too, with
+the corresponding adjustments to 'NSCOUNT' and 'ARCOUNT' fields. More about
+these sections later.
+
+</p>
+<a class="target" name="rrsets">&nbsp;</a><a class="target" name="dnsbasics/rrsets">&nbsp;</a><a class="target" name="toc1.1">&nbsp;</a><h2>RRSETs</h2>
+<p>
+
+In the example above, the question for the AAAA record of 'www.ietf.org' had
+exactly one corresponding resource record. In a human readable 'zone file',
+this would be stored as:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-string">www.ietf.org</span>	<span class="hljs-string">IN</span>	<span class="hljs-string">AAAA</span>	<span class="hljs-number">3600	</span><span class="hljs-number">2400</span><span class="hljs-string">:cb00:2048:1::6814:55</span></code></pre><p>
+
+It is however possible to have multiple AAAA records for the same name. Even
+if there is only one record, the DNS specifications talk about 'Resource
+Record Sets', or RRSETs. These operate in unity. So even though the encoding
+in the DNS packet allows different TTL values within a single RRSET, this
+should never happen.
+
+</p>
+<a class="target" name="zonefiles">&nbsp;</a><a class="target" name="dnsbasics/zonefiles">&nbsp;</a><a class="target" name="toc1.2">&nbsp;</a><h2>Zone files</h2>
+<p>
+
+Zone files are one way of storing DNS data, but these are not integral to
+the operation of a nameserver.  The zone file format is standardized
+(<a href="https://tools.ietf.org/html/rfc1035">section 5 of RFC 1035</a>), but it
+is highly non-trivial to parse.  It is entirely possible to write useful
+nameserver that does not read or write DNS zone files.  When embarking on
+parsing zonefiles, do not do so lightly.  As an example, various fields
+within a single line can appear in many orders.  Most fields are optional,
+and some will then be copied from the previous line.  But not all.
+
+</p><p>
+
+Of specific note, many people have attempted to write a grammar (say, in
+Yacc) for zonefiles and it is almost impossible.
+
+</p>
+<a class="target" name="dnsnames">&nbsp;</a><a class="target" name="dnsbasics/dnsnames">&nbsp;</a><a class="target" name="toc1.3">&nbsp;</a><h2>DNS Names</h2>
+<p>
+
+The concept of a DNS name is non-trivial and frequently misunderstood.
+Despite writing 'www.ietf.org' from left to right, within DNS it is fairer
+to describe it as 'org' below the root node, with below the 'org' node a
+node called 'ietf'.  Finally to the 'ietf' node is attached a node called
+'www'.
+
+</p><p>
+
+Or in graphical form:
+
+</p><p>
+
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="256" width="176" style="margin:0 auto 0 auto;"><g transform="translate(8,16 )">
+<path d="M 104,0 L 104,32 " style="fill:none;"></path>
+<path d="M 104,64 L 104,96 " style="fill:none;"></path>
+<path d="M 104,128 L 104,160 " style="fill:none;"></path>
+<path d="M 104,192 L 104,224 " style="fill:none;"></path>
+<path d="M 128,32 L 128,64 " style="fill:none;"></path>
+<path d="M 128,96 L 128,128 " style="fill:none;"></path>
+<path d="M 128,160 L 128,192 " style="fill:none;"></path>
+<path d="M 152,0 L 152,32 " style="fill:none;"></path>
+<path d="M 152,64 L 152,96 " style="fill:none;"></path>
+<path d="M 152,192 L 152,224 " style="fill:none;"></path>
+<path d="M 160,128 L 160,160 " style="fill:none;"></path>
+<path d="M 104,0 L 152,0 " style="fill:none;"></path>
+<path d="M 104,32 L 152,32 " style="fill:none;"></path>
+<path d="M 104,64 L 152,64 " style="fill:none;"></path>
+<path d="M 104,96 L 152,96 " style="fill:none;"></path>
+<path d="M 104,128 L 160,128 " style="fill:none;"></path>
+<path d="M 104,160 L 160,160 " style="fill:none;"></path>
+<path d="M 104,192 L 152,192 " style="fill:none;"></path>
+<path d="M 104,224 L 152,224 " style="fill:none;"></path>
+<g transform="translate(0,0)"><text text-anchor="middle" x="120" y="84">O</text><text text-anchor="middle" x="128" y="84">R</text><text text-anchor="middle" x="136" y="84">G</text><text text-anchor="middle" x="120" y="148">I</text><text text-anchor="middle" x="128" y="148">E</text><text text-anchor="middle" x="136" y="148">T</text><text text-anchor="middle" x="144" y="148">F</text><text text-anchor="middle" x="120" y="212">W</text><text text-anchor="middle" x="128" y="212">W</text><text text-anchor="middle" x="136" y="212">W</text></g></g></svg>
+
+</p><p>
+
+The 'tree' of nodes as shown above is real and not just another way of
+visualizing a DNS name.  This for example means that if there is a name
+called 'ns1.ord.ietf.org' and a query comes in for 'ns2.fra.ietf.org', that
+name exists - even though no records may be assigned to it.
+
+</p><p>
+
+The 'org' zone for example might look like this:
+
+</p><p>
+
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="304" width="768" style="margin:0 auto 0 auto;"><g transform="translate(8,16 )">
+<path d="M 136,192 L 136,224 " style="fill:none;"></path>
+<path d="M 208,192 L 208,224 " style="fill:none;"></path>
+<path d="M 296,48 L 296,80 " style="fill:none;"></path>
+<path d="M 296,112 L 296,160 " style="fill:none;"></path>
+<path d="M 288,16 L 304,16 " style="fill:none;"></path>
+<path d="M 192,32 L 272,32 " style="fill:none;"></path>
+<path d="M 320,32 L 392,32 " style="fill:none;"></path>
+<path d="M 288,48 L 304,48 " style="fill:none;"></path>
+<path d="M 160,80 L 176,80 " style="fill:none;"></path>
+<path d="M 288,80 L 304,80 " style="fill:none;"></path>
+<path d="M 408,80 L 424,80 " style="fill:none;"></path>
+<path d="M 160,112 L 176,112 " style="fill:none;"></path>
+<path d="M 288,112 L 304,112 " style="fill:none;"></path>
+<path d="M 408,112 L 424,112 " style="fill:none;"></path>
+<path d="M 128,160 L 144,160 " style="fill:none;"></path>
+<path d="M 200,160 L 216,160 " style="fill:none;"></path>
+<path d="M 288,160 L 304,160 " style="fill:none;"></path>
+<path d="M 128,192 L 144,192 " style="fill:none;"></path>
+<path d="M 200,192 L 216,192 " style="fill:none;"></path>
+<path d="M 288,192 L 304,192 " style="fill:none;"></path>
+<path d="M 128,224 L 144,224 " style="fill:none;"></path>
+<path d="M 200,224 L 216,224 " style="fill:none;"></path>
+<path d="M 128,256 L 144,256 " style="fill:none;"></path>
+<path d="M 200,256 L 216,256 " style="fill:none;"></path>
+<path d="M 168,112 L 192,160 " style="fill:none;"></path>
+<path d="M 392,32 L 416,80 " style="fill:none;"></path>
+<path d="M 168,80 L 192,32 " style="fill:none;"></path>
+<path d="M 144,160 L 168,112 " style="fill:none;"></path>
+<path d="M 288,16 C 271.2,16 272,32 272,32 " style="fill:none;"></path>
+<path d="M 304,16 C 320.8,16 320,32 320,32 " style="fill:none;"></path>
+<path d="M 288,48 C 271.2,48 272,32 272,32 " style="fill:none;"></path>
+<path d="M 304,48 C 320.8,48 320,32 320,32 " style="fill:none;"></path>
+<path d="M 160,80 C 143.2,80 144,96 144,96 " style="fill:none;"></path>
+<path d="M 176,80 C 192.8,80 192,96 192,96 " style="fill:none;"></path>
+<path d="M 288,80 C 271.2,80 272,96 272,96 " style="fill:none;"></path>
+<path d="M 304,80 C 320.8,80 320,96 320,96 " style="fill:none;"></path>
+<path d="M 408,80 C 391.2,80 392,96 392,96 " style="fill:none;"></path>
+<path d="M 424,80 C 440.8,80 440,96 440,96 " style="fill:none;"></path>
+<path d="M 160,112 C 143.2,112 144,96 144,96 " style="fill:none;"></path>
+<path d="M 176,112 C 192.8,112 192,96 192,96 " style="fill:none;"></path>
+<path d="M 288,112 C 271.2,112 272,96 272,96 " style="fill:none;"></path>
+<path d="M 304,112 C 320.8,112 320,96 320,96 " style="fill:none;"></path>
+<path d="M 408,112 C 391.2,112 392,96 392,96 " style="fill:none;"></path>
+<path d="M 424,112 C 440.8,112 440,96 440,96 " style="fill:none;"></path>
+<path d="M 128,160 C 111.2,160 112,176 112,176 " style="fill:none;"></path>
+<path d="M 144,160 C 160.8,160 160,176 160,176 " style="fill:none;"></path>
+<path d="M 200,160 C 183.2,160 184,176 184,176 " style="fill:none;"></path>
+<path d="M 216,160 C 232.8,160 232,176 232,176 " style="fill:none;"></path>
+<path d="M 288,160 C 271.2,160 272,176 272,176 " style="fill:none;"></path>
+<path d="M 304,160 C 320.8,160 320,176 320,176 " style="fill:none;"></path>
+<path d="M 128,192 C 111.2,192 112,176 112,176 " style="fill:none;"></path>
+<path d="M 144,192 C 160.8,192 160,176 160,176 " style="fill:none;"></path>
+<path d="M 200,192 C 183.2,192 184,176 184,176 " style="fill:none;"></path>
+<path d="M 216,192 C 232.8,192 232,176 232,176 " style="fill:none;"></path>
+<path d="M 288,192 C 271.2,192 272,176 272,176 " style="fill:none;"></path>
+<path d="M 304,192 C 320.8,192 320,176 320,176 " style="fill:none;"></path>
+<path d="M 128,224 C 111.2,224 112,240 112,240 " style="fill:none;"></path>
+<path d="M 144,224 C 160.8,224 160,240 160,240 " style="fill:none;"></path>
+<path d="M 200,224 C 183.2,224 184,240 184,240 " style="fill:none;"></path>
+<path d="M 216,224 C 232.8,224 232,240 232,240 " style="fill:none;"></path>
+<path d="M 128,256 C 111.2,256 112,240 112,240 " style="fill:none;"></path>
+<path d="M 144,256 C 160.8,256 160,240 160,240 " style="fill:none;"></path>
+<path d="M 200,256 C 183.2,256 184,240 184,240 " style="fill:none;"></path>
+<path d="M 216,256 C 232.8,256 232,240 232,240 " style="fill:none;"></path>
+<g transform="translate(0,0)"><text text-anchor="middle" x="288" y="36">o</text><text text-anchor="middle" x="296" y="36">r</text><text text-anchor="middle" x="304" y="36">g</text><text text-anchor="middle" x="160" y="100">i</text><text text-anchor="middle" x="168" y="100">e</text><text text-anchor="middle" x="176" y="100">t</text><text text-anchor="middle" x="184" y="100">f</text><text text-anchor="middle" x="288" y="100">i</text><text text-anchor="middle" x="296" y="100">e</text><text text-anchor="middle" x="304" y="100">t</text><text text-anchor="middle" x="312" y="100">g</text><text text-anchor="middle" x="408" y="100">.</text><text text-anchor="middle" x="416" y="100">.</text><text text-anchor="middle" x="424" y="100">.</text><text text-anchor="middle" x="128" y="180">o</text><text text-anchor="middle" x="136" y="180">r</text><text text-anchor="middle" x="144" y="180">d</text><text text-anchor="middle" x="200" y="180">f</text><text text-anchor="middle" x="208" y="180">r</text><text text-anchor="middle" x="216" y="180">a</text><text text-anchor="middle" x="288" y="180">.</text><text text-anchor="middle" x="296" y="180">.</text><text text-anchor="middle" x="304" y="180">.</text><text text-anchor="middle" x="128" y="244">n</text><text text-anchor="middle" x="136" y="244">s</text><text text-anchor="middle" x="144" y="244">1</text><text text-anchor="middle" x="200" y="244">n</text><text text-anchor="middle" x="208" y="244">s</text><text text-anchor="middle" x="216" y="244">2</text></g></g></svg>
+
+</p><p>
+
+NOTE: This means that any implementation that sees DNS as a simple
+'key/value' store, where only records that exist can match is headed for
+trouble down the line.  The <a href="https://tools.ietf.org/html/rfc8020">DNS
+standard</a>  allows implementations to assume
+that if 'ord.ietf.org' does not exist, neither does ns1. This saves queries
+but will kill your domain names if you get this wrong.
+
+</p>
+<a class="target" name="zones">&nbsp;</a><a class="target" name="dnsbasics/zones">&nbsp;</a><a class="target" name="toc1.4">&nbsp;</a><h2>Zones</h2>
+<p>
+
+As noted, DNS is more complicated than a simple key/value store.  This is
+not only because of the tree style nature of names but also because the same
+data can live in multiple places, but always lives in a 'zone'.
+
+</p><p>
+
+Various DNS implementations over time have found out that you can mostly
+ignore the concept of 'zone' for simple nameservers or load balancers, but
+not implementing zones correctly will eventually trip you up.
+
+</p><p>
+
+To make life confusing, 'www.ietf.org' can be defined in four different
+places. It could be in the 'root' zone itself, fully written out:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-string">www.ietf.org</span>	<span class="hljs-string">IN</span>	<span class="hljs-string">AAAA</span>	<span class="hljs-number">3600	</span><span class="hljs-number">2400</span><span class="hljs-string">:cb00:2048:1::6814:55</span></code></pre><p>
+Or it could be in the org zone, where it might look like this:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-variable">$origin</span> <span class="hljs-variable constant_">ORG</span>
+<span class="line"></span>www.ietf	<span class="hljs-variable constant_">IN</span>	<span class="hljs-variable constant_">AAAA</span>	<span class="hljs-number">3600</span>	<span class="hljs-number">2400</span><span class="hljs-symbol">:cb00</span><span class="hljs-symbol">:</span><span class="hljs-number">2048</span><span class="hljs-symbol">:</span><span class="hljs-number">1</span><span class="hljs-symbol">:</span><span class="hljs-symbol">:</span><span class="hljs-number">6814</span><span class="hljs-symbol">:</span><span class="hljs-number">55</span></code></pre><p>
+
+Or, (as is actually the case), this name could live in the 'ietf.org' zone:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-variable">$origin</span> ietf.org
+<span class="line"></span>www	<span class="hljs-variable constant_">IN</span>	<span class="hljs-variable constant_">AAAA</span>	<span class="hljs-number">3600</span>	<span class="hljs-number">2400</span><span class="hljs-symbol">:cb00</span><span class="hljs-symbol">:</span><span class="hljs-number">2048</span><span class="hljs-symbol">:</span><span class="hljs-number">1</span><span class="hljs-symbol">:</span><span class="hljs-symbol">:</span><span class="hljs-number">6814</span><span class="hljs-symbol">:</span><span class="hljs-number">55</span></code></pre><p>
+
+And finally, it is even possible that there is a zone called 'www.ietf.org',
+where the record lives like this:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-variable">$origin</span> www.ietf.org
+<span class="line"></span>@	<span class="hljs-variable constant_">IN</span>	<span class="hljs-variable constant_">AAAA</span>	<span class="hljs-number">3600</span>	<span class="hljs-number">2400</span><span class="hljs-symbol">:cb00</span><span class="hljs-symbol">:</span><span class="hljs-number">2048</span><span class="hljs-symbol">:</span><span class="hljs-number">1</span><span class="hljs-symbol">:</span><span class="hljs-symbol">:</span><span class="hljs-number">6814</span><span class="hljs-symbol">:</span><span class="hljs-number">55</span></code></pre>
+<a class="target" name="startofauthority">&nbsp;</a><a class="target" name="dnsbasics/zones/startofauthority">&nbsp;</a><a class="target" name="toc1.4.1">&nbsp;</a><h3>Start of Authority</h3>
+<p>
+
+A zone always starts with a SOA or Start Of Authority record.  A SOA record
+is DNS metadata.  It stores various things that may be of interest about a
+zone, like the email address of the maintainer, the name of the most
+authoritative server.  It also has values that describe how or if a zone
+needs to be replicated.  Finally, the SOA record has a number that
+influences TTL values for names that do not exist.
+
+</p><p>
+
+There is only one SOA that is guaranteed to exist on the internet and that
+is the one for the root zone (called '.').  As of 2018, it looks like this:
+
+</p><pre class="listing backtick"><code><span class="line"></span>.   <span class="hljs-number">86400</span>   IN   SOA   <span class="hljs-selector-tag">a</span><span class="hljs-selector-class">.root-servers</span><span class="hljs-selector-class">.net</span>. nstld<span class="hljs-selector-class">.verisign-grs</span><span class="hljs-selector-class">.com</span>. <span class="hljs-number">2018032802</span> <span class="hljs-number">1800</span> <span class="hljs-number">900</span> <span class="hljs-number">604800</span> <span class="hljs-number">86400</span></code></pre><p>
+
+For details of what all these fields mean, please see the <a href="auth.html">authoritative
+server document</a>.
+
+</p><p>
+
+The final number however is important here.  86400 denotes that if a
+response says a name or RRSET does not exist, it will continue to not exist
+for the next day, and that this knowledge may be cached.
+
+</p>
+<a class="target" name="zonecuts">&nbsp;</a><a class="target" name="dnsbasics/zones/zonecuts">&nbsp;</a><a class="target" name="toc1.4.2">&nbsp;</a><h3>Zone cuts</h3>
+<p>
+
+As noted, 'www.ietf.org' can live in four places. If it lives where it
+currently does, in the 'ietf.org' zone, it passes through two zone cuts:
+From . to org, from org to ietf.org.
+
+</p><p>
+
+When an authoritative server receives a query for 'www.ietf.org', it
+consults which zones it knows about and answers from the most specific zone
+it has available.
+
+</p><p>
+
+For a root-server, which only knows about the root zone, this means
+consulting the '.' zone. As noted, 'www.ietf.org' is actually a tree, 'org'
+→ 'ietf' → 'www'. And as luck will have it, the first node 'org' is
+present in the root zone.
+
+</p><p>
+
+Attached to that node is an NS RRSET, which has the names of nameservers
+that host the ORG zone.
+
+</p><p>
+
+If we ask these servers about 'www.ietf.org', they too find the best zone to
+answer from, which in this case is 'org'. Within the 'org' zone they then
+find the 'ietf' node, which again contains an NS RRSET.
+
+</p><p>
+
+When we ask the servers named in that RRSET about 'www.ietf.org', they find
+a node called 'www' with several RRSETs on it, one of which is for AAAA and
+contains the IPv6 address we were looking for.
+
+</p><p>
+
+Any authoritative server which does not implement 'zones' in this way will
+eventually run into trouble. It is not enough to consult a list of known
+names and answer records attached to those names.
+
+</p>
+<a class="target" name="nsrecords">&nbsp;</a><a class="target" name="dnsbasics/zones/nsrecords">&nbsp;</a><a class="target" name="toc1.4.3">&nbsp;</a><h3>NS Records</h3>
+<p>
+
+These are a mandatory part of a zone, at the 'apex'. The 'apex' is the name
+of the zone, at which point there is also a SOA record. So a typical zone
+will start like this:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-variable">$ORIGIN</span> ietf.org.
+<span class="line"></span>@	IN	SOA	ns1  admin 2018032802 1800 900 604800 86400
+<span class="line"></span>	IN	NS	ns1
+<span class="line"></span>	IN	NS	ns2</code></pre><p>
+
+Note how in this zone file example names not ending on a '.' are interpreted
+as being part of ietf.org. The '@' is a way to specify the name of the
+apex. Lines two and three omit a name, so they default to '@' too.
+
+</p><p>
+
+This zone lists ns1.ietf.org and ns2.ietf.org as its nameservers.
+Being part of the zone, this data is <em class="asterisk">authoritative</em>. Any queries sent to
+this nameserver for the NS RRSET of 'ietf.org' will receive responses
+with the AA bit set.
+
+</p><p>
+
+Note however that above we learned that the parent zone, 'org' also needs to
+list the nameservers for example.org, and it does:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-variable">$ORIGIN</span> org.
+<span class="line"></span>...
+<span class="line"></span>ietf	IN	NS	ns1.ietf
+<span class="line"></span>ietf	IN	NS	ns2.ietf</code></pre><p>
+
+If we ask the 'org' nameservers for the NS RRSET of 'ietf.org', we receive a
+response with AA=0, indicating that the 'org' servers know they aren't
+'authoritative' for ietf.org.
+
+</p>
+<a class="target" name="gluerecords">&nbsp;</a><a class="target" name="dnsbasics/zones/gluerecords">&nbsp;</a><a class="target" name="toc1.4.4">&nbsp;</a><h3>Glue records</h3>
+<p>
+
+The astute reader will have spotted a chicken and egg problem here.  If
+ns1.ietf.org is the nameserver for ietf.org... where do we get the IP
+address of ns1.ietf.org?
+
+</p><p>
+
+To solve this problem, the parent zone can provide a free chicken. In the
+org zone, we would actually find:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-variable">$ORIGIN</span> org.
+<span class="line"></span>...
+<span class="line"></span>ietf	IN	NS	ns1.ietf
+<span class="line"></span>ietf	IN	NS	ns2.ietf
+<span class="line"></span>ns1.ietf	IN	A	192.0.2.1
+<span class="line"></span>ns2.ietf	IN	A	198.51.100.1</code></pre><p>
+
+These entries are mirrored in the 'ietf.org' zone hosted on ns1.ietf.org and
+ns2.ietf.org. And as with the NS records, any queries for ns1.ietf.org sent
+to the org servers receive AA=0 answers, whereas ns1.ietf.org itself answers
+with AA=1.
+
+</p><p>
+
+Note that for various reasons the AA=0 answer from the parent zone may be
+different than the AA=1 answer, and resolvers must be aware of the
+difference.
+
+</p>
+<a class="target" name="furtheraspects">&nbsp;</a><a class="target" name="furtheraspects">&nbsp;</a><a class="target" name="toc2">&nbsp;</a><h1>Further aspects</h1>
+<p>
+
+
+The description up to this point is correct, but far from functionally
+complete even for basic DNS. The following sections describe additional
+aspects of basic DNS:
+
+</p>
+<a class="target" name="cname">&nbsp;</a><a class="target" name="furtheraspects/cname">&nbsp;</a><a class="target" name="toc2.1">&nbsp;</a><h2>CNAME</h2>
+<p>
+
+A CNAME provides the 'Canonical Name' for another DNS name. For example:
+
+</p><pre class="listing backtick"><code><span class="line"></span>www	IN	<span class="hljs-built_in">CNAME</span>	www.ietf.org.cdn.cloudflare.net.</code></pre><p>
+
+This is frequently used to redirect to a Content Distribution Network. The
+CNAME is for a name, and not for a type. This means that <em class="asterisk">any</em> query for
+www.ietf.org is sent to Cloudflare. This simultaneously means that what
+everyone wants is impossible:
+
+</p><pre class="listing backtick"><code><span class="line"></span>$ORIGIN ietf.org
+<span class="line"></span>@	IN	CNAME <span class="hljs-keyword">this</span>.does.<span class="hljs-keyword">not</span>.work.<span class="hljs-built_in">int</span>.</code></pre><p>
+
+This collides with the SOA and NS records, which are then also redirected
+and not found. Often, using this 'apex CNAME' may seem to work, but it
+really doesn't.
+
+</p><p>
+
+In hindsight, the CNAME should have been 'typed' to apply only to specific
+query types.
+
+</p><p>
+
+When a server encounters a CNAME with the name of a name it was looking for,
+it will 'follow' the chain to where it points. And please be aware that this
+can loop.
+
+</p>
+<a class="target" name="wildcards">&nbsp;</a><a class="target" name="furtheraspects/wildcards">&nbsp;</a><a class="target" name="toc2.2">&nbsp;</a><h2>Wildcards</h2>
+<p>
+
+Wildcards allow for the following:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-variable">$ORIGIN</span> ietf.org.
+<span class="line"></span>*	<span class="hljs-variable constant_">IN</span>	A	<span class="hljs-number">192.0</span>.<span class="hljs-number">2.1</span>
+<span class="line"></span>	<span class="hljs-variable constant_">IN</span>	<span class="hljs-variable constant_">AAAA</span>	<span class="hljs-number">2001</span><span class="hljs-symbol">:db8</span><span class="hljs-symbol">:</span>85a3::8<span class="hljs-symbol">a2e:</span><span class="hljs-number">0370</span><span class="hljs-symbol">:</span><span class="hljs-number">7334</span>
+<span class="line"></span>smtp	<span class="hljs-variable constant_">IN</span>	A	<span class="hljs-number">192.0</span>.<span class="hljs-number">2.222</span></code></pre><p>
+
+A query for the A record of 'smtp.ietf.org' will return 192.0.2.222. A query
+for 'www.ietf.org' however will return 192.0.2.1.
+
+</p><p>
+
+Interestingly, as another example of how DNS really is a tree, a query for
+the AAAA record of smtp.ietf.org will return... nothing.  This is because
+the node 'smtp.ietf.org' does exist, and processing ends there.  The
+wildcard match will not proceed to the '*' entry.
+
+</p><p>
+
+Wildcards synthesize new answers. This means that, unless explicitly
+queried, no '*.ietf.org' record will be served. Instead, a 'www.ietf.org'
+record is created on the fly.
+
+</p>
+<a class="target" name="truncation">&nbsp;</a><a class="target" name="furtheraspects/truncation">&nbsp;</a><a class="target" name="toc2.3">&nbsp;</a><h2>Truncation</h2>
+<p>
+
+Without implementing the optional EDNS protocol extension, all UDP responses
+must fit in 512 bytes of payload. If on writing an answer a server finds
+itself exceeding this limit, it must truncate the packet and set the TC bit
+to 1.
+
+</p><p>
+
+The originator of the query will then resend the query over TCP.
+
+</p><p>
+
+Sometimes DNS responses contain optional data that could be left out, and
+this could be done to stay under the 512 byte limit.
+
+</p><p>
+
+It is recommended however to keep it simple and send an empty response
+packet with TC=1 whenever the byte limit is reached.
+
+</p>
+<a class="target" name="namesandnodesthatdonotexist">&nbsp;</a><a class="target" name="furtheraspects/namesandnodesthatdonotexist">&nbsp;</a><a class="target" name="toc2.4">&nbsp;</a><h2>Names and nodes that do not exist</h2>
+<p>
+
+DNS queries can fail to match in two ways: the whole node does not exist,
+or, the requested type is not present at that node.
+
+</p><p>
+
+As an example of the first case, 'doesnotexist.ietf.org' really does not
+exist, which leads to a response with RCODE NXDOMAIN and no answer records.
+
+</p><p>
+
+As an example of the second case, 'www.ietf.org' does exist, but has no MX
+record. The RCODE is normal, but there are no answer records.
+
+</p><p>
+
+Empty answers however are hard to cache. To alleviate this situation, in
+these cases the authoritative server sends a copy of the SOA record in the
+Authority section of the response. The TTL of that record tells us how long
+the knowledge of 'no such name' or 'no such data' can be cached.
+
+</p>
+<a class="target" name="querytypesthatarenotrrsettypes">&nbsp;</a><a class="target" name="furtheraspects/querytypesthatarenotrrsettypes">&nbsp;</a><a class="target" name="toc2.5">&nbsp;</a><h2>Query types that are not RRSET types</h2>
+<p>
+
+In addition to the resource record types covered above, like A, AAAA, NS and
+SOA, two additional types exist that can only be used in queries: ANY, AXFR
+and IXFR.
+
+</p><p>
+
+An ANY query instructs a nameserver to return all types it immediately has
+available for a name. This 'immediately' qualification makes ANY queries
+unsuitable for talking to resolvers - it is not sure the response is in any
+way complete.
+
+</p><p>
+
+Because of the potential of creating huge answers, the use of ANY is
+problematic even when talking to authoritative servers, and it may no longer
+work well in the future.
+
+</p><p>
+
+AXFR and IXFR are requests for (incremental) zone transfers, almost always
+over TCP. This query asks an authoritative server to list an entire zone.
+Resolvers do not process AXFR or IXFR queries.
+
+</p>
+<a class="target" name="that'sitforbasicdns!">&nbsp;</a><a class="target" name="that'sitforbasicdns!">&nbsp;</a><a class="target" name="toc3">&nbsp;</a><h1>That's it for basic DNS!</h1>
+<p>
+
+This is the core of DNS. There are quite some parts that have not been
+discussed, but based on the explanations above, it is possible to write a
+compliant authoritative server.
+
+</p>
+<a class="target" name="furtherreading">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading">&nbsp;</a><a class="target" name="toc3.1">&nbsp;</a><h2>Further reading</h2>
+
+<a class="target" name="rfc1034/1035">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc1034/1035">&nbsp;</a><a class="target" name="toc3.1.1">&nbsp;</a><h3>RFC 1034 / 1035</h3>
+<p>
+
+
+These (<a href="https://tools.ietf.org/html/rfc1034">1034</a> &amp;
+<a href="https://tools.ietf.org/html/rfc1035">1035</a>) describe the core of DNS in
+1987 language.  When reading, disregard mentions of IQUERY and experimental
+records.  They did not survive.  Also realize that in this world,
+authoritative and resolver service were described as a single function.  We
+now know this to be confusing.
+
+</p>
+<a class="target" name="rfc2181:%22clarificationstothednsspecification%22">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc2181:“clarificationstothednsspecification”">&nbsp;</a><a class="target" name="toc3.1.2">&nbsp;</a><h3>RFC 2181: “Clarifications to the DNS Specification”</h3>
+<p>
+
+From 1997, <a href="https://tools.ietf.org/html/rfc2181">2181</a> performs a decade of
+cleanup work on 1034/1035.  It also talks about an early version of DNSSEC
+(NXT, SIG, KEY records), these sections should not be read as this is
+unrelated to current DNSSEC (aka DNSSEC-bis).
+
+</p><p>
+
+Of specific note, 5.4.1 describes very exact ordering rules which data a
+server is supposed to prefer. This list becomes a lot simpler when split up
+between pure authoritative and pure resolver functions.
+
+</p>
+<a class="target" name="rfc2308:%22negativecachingofdnsqueries(ncache)">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc2308:“negativecachingofdnsqueries(ncache)">&nbsp;</a><a class="target" name="toc3.1.3">&nbsp;</a><h3>RFC 2308: “Negative caching of DNS Queries (NCACHE)</h3>
+<p>
+
+This <a href="https://tools.ietf.org/html/rfc2308">RFC</a> describes how negative
+responses are to be cached. The details matter for both authoritative servers and
+resolvers. Of specific note are the parts that dwell on CNAME chains which
+lead to a 'no data' or 'NXDOMAIN' situation.
+
+</p><p>
+
+As with 2181, this RFC speaks about an earlier version of DNSSEC, and these
+parts should be fully ignored.
+
+</p>
+<a class="target" name="rfc3596:%22dnsextensionstosupportipversion6%22">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc3596:“dnsextensionstosupportipversion6%22">&nbsp;</a><a class="target" name="toc3.1.4">&nbsp;</a><h3>RFC 3596: “DNS Extensions to Support IP Version 6"</h3>
+<p>
+
+This <a href="https://tools.ietf.org/html/rfc3596">RFC</a> describes the AAAA record,
+which is core to DNS as it is required to look up addresses of nameservers.
+
+</p>
+<a class="target" name="rfc4343:%22domainnamesystemcaseinsensitivityclarification%22">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc4343:“domainnamesystemcaseinsensitivityclarification”">&nbsp;</a><a class="target" name="toc3.1.5">&nbsp;</a><h3>RFC 4343: “Domain Name System Case Insensitivity Clarification”</h3>
+<p>
+
+<a href="https://tools.ietf.org/html/rfc4343">4343</a> clarifies the somewhat odd
+case insensitivity of DNS but also writes out the escaping rules when using
+non-ASCII or whitespace in DNS names. As noted before, try not to have to
+use these rules except when reading DNS data from text files or showing DNS
+data meant for human consumption. Use native DNS names as much as possible,
+and create 4343-compliant comparison and equivalence functions.
+
+</p>
+<a class="target" name="rfc5452:%22measuresformakingdnsmoreresilientagainstforgedanswers%22">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc5452:“measuresformakingdnsmoreresilientagainstforgedanswers”">&nbsp;</a><a class="target" name="toc3.1.6">&nbsp;</a><h3>RFC 5452: “Measures for Making DNS More Resilient against Forged Answers”</h3>
+<p>
+
+This <a href="https://tools.ietf.org/html/rfc5452">RFC</a> makes source port
+randomization mandatory for UDP-based DNS messages and also has rules on
+preventing “birthday attacks”.
+
+</p>
+<a class="target" name="rfc6604:%22xnamercodeclarification%22">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc6604:“xnamercodeclarification”">&nbsp;</a><a class="target" name="toc3.1.7">&nbsp;</a><h3>RFC 6604: “xNAME RCODE Clarification”</h3>
+<p>
+
+<a href="https://tools.ietf.org/html/rfc6604">6604</a> further describes the meanings
+of header bits (AA) and RCODEs when following CNAME chains. Also discusses
+an earlier version of DNAMEs, these parts are best ignored in lieu of
+(later) reading the newer DNAME specification.
+
+</p>
+<a class="target" name="rfc7766:dnstransportovertcp-implementationrequirements">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc7766:dnstransportovertcp-implementationrequirements">&nbsp;</a><a class="target" name="toc3.1.8">&nbsp;</a><h3>RFC 7766: DNS Transport over TCP - Implementation Requirements</h3>
+<p>
+
+<a href="https://tools.ietf.org/html/rfc7766.txt">This RFC</a> updates 1034/1035 to
+state that TCP is a mandatory part of DNS and a first class citizen. It also
+updates timeout rules, recommending rather brief timeouts compared to the
+'minutes' noted in the original DNS standard.
+
+</p>
+<a class="target" name="rfc8020:nxdomain:therereallyisnothingunderneath">&nbsp;</a><a class="target" name="that'sitforbasicdns!/furtherreading/rfc8020:nxdomain:therereallyisnothingunderneath">&nbsp;</a><a class="target" name="toc3.1.9">&nbsp;</a><h3>RFC 8020: NXDOMAIN: There really is nothing underneath</h3>
+<p>
+
+<a href="https://tools.ietf.org/html/rfc8020">8020</a> clarifies 1034 and 2308 to state
+that if 'ord.ietf.org' does not exist, resolvers can safely assume that
+neither will 'ns1.ord.ietf.org' - without doing any further queries.
+
+</p><p>
+
+</p></span><div id="mdContextMenu" style="visibility:hidden"></div><div class="markdeepFooter"><i>formatted by <a href="https://casual-effects.com/markdeep" style="color:#999">Markdeep&nbsp;1.16&nbsp;&nbsp;</a></i><div style="display:inline-block;font-size:13px;font-family:'Times New Roman',serif;vertical-align:middle;transform:translate(-3px,-1px)rotate(135deg);">✒</div></div></body></html>

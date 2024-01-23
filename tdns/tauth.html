@@ -1,0 +1,780 @@
+<html><head><meta charset="utf-8" emacsmode="-*- markdown -*-">
+                            </head><body id="md" style="visibility: visible;"><meta charset="UTF-8"><meta http-equiv="content-type" content="text/html;charset=UTF-8"><meta name="viewport" content="width=600, initial-scale=1"><style>body{max-width:680px;margin:auto;padding:20px;text-align:justify;line-height:140%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased;color:#222;font-family:Palatino,Georgia,"Times New Roman",serif}</style><style>@media print{*{-webkit-print-color-adjust:exact;text-shadow:none !important}}body{counter-reset: h1 paragraph line item list-item}@page{margin:0;size:auto}#mdContextMenu{position:absolute;background:#383838;cursor:default;border:1px solid #999;color:#fff;padding:4px 0px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,"Helvetica Neue",sans-serif;font-size:85%;font-weight:600;border-radius:4px;box-shadow:0px 3px 10px rgba(0,0,0,35%)}#mdContextMenu div{padding:0px 20px}#mdContextMenu div:hover{background:#1659d1}.md code,.md pre{font-family:Menlo,Consolas,monospace;font-size:85%;text-align:left;line-height:140%}.md .mediumToc code,.md longToc code,.md .shortToc code,.md h1 code,.md h2 code,.md h3 code,.md h4 code,.md h5 code,.md h6 code{font-size:unset}.md div.title{font-size:26px;font-weight:800;line-height:120%;text-align:center}.md div.afterTitles{height:10px}.md div.subtitle{text-align:center}.md iframe.textinsert, .md object.textinsert,.md iframe:not(.markdeep){display:block;margin-top:10px;margin-bottom:10px;width:100%;height:75vh;border:1px solid #000;border-radius:4px;background:#f5f5f4}.md .image{display:inline-block}.md img{max-width:100%;page-break-inside:avoid}.md li{text-align:left;text-indent:0}.md pre.listing {width:100%;tab-size:4;-moz-tab-size:4;-o-tab-size:4;counter-reset:line;overflow-x:auto;resize:horizontal}.md pre.listing .linenumbers span.line:before{width:30px;margin-left:-28px;font-size:80%;text-align:right;counter-increment:line;content:counter(line);display:inline-block;padding-right:13px;margin-right:8px;color:#ccc}.md div.tilde{margin:20px 0 -10px;text-align:center}.md .imagecaption,.md .tablecaption,.md .listingcaption{display:inline-block;margin:7px 5px 12px;text-align:justify;font-style:italic}.md img.pixel{image-rendering:-moz-crisp-edges;image-rendering:pixelated}.md blockquote.fancyquote{margin:25px 0 25px;text-align:left;line-height:160%}.md blockquote.fancyquote::before{content:"“";color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-right:6px;vertical-align:-0.3em}.md span.fancyquote{font-size:118%;color:#777;font-style:italic}.md span.fancyquote::after{content:"”";font-style:normal;color:#DDD;font-family:Times New Roman;font-size:45px;line-height:0;margin-left:6px;vertical-align:-0.3em}.md blockquote.fancyquote .author{width:100%;margin-top:10px;display:inline-block;text-align:right}.md small{font-size:60%}.md big{font-size:150%}.md div.title,.md contents,.md .tocHeader,.md h1,.md h2,.md h3,.md h4,.md h5,.md h6,.md .shortTOC,.md .mediumTOC,.md .nonumberh1,.md .nonumberh2,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{font-family:Verdana,Helvetica,Arial,sans-serif;margin:13.4px 0 13.4px;padding:15px 0 3px;border-top:none;clear:both}.md .tocTop {display:none}.md h1,.md h2,.md h3,.md h4,.md h5,.md h6,.md .nonumberh1,.md .nonumberh2,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{page-break-after:avoid;break-after:avoid}.md svg.diagram{display:block;font-family:Menlo,Consolas,monospace;font-size:85%;text-align:center;stroke-linecap:round;stroke-width:2px;page-break-inside:avoid;stroke:#000;fill:#000}.md svg.diagram .opendot{fill:#fff}.md svg.diagram .shadeddot{fill:#CCC}.md svg.diagram .dotteddot{stroke:#000;stroke-dasharray:4;fill:none}.md svg.diagram text{stroke:none}@media print{@page{margin:1in 5mm;transform: scale(150%)}}@media print{.md .pagebreak{page-break-after:always;visibility:hidden}}.md a{font-family:Georgia,Palatino,'Times New Roman'}.md h1,.md .tocHeader,.md .nonumberh1{border-bottom:3px solid;font-size:20px;font-weight:bold;}.md h1,.md .nonumberh1{counter-reset:h2 h3 h4 h5 h6}.md h2,.md .nonumberh2{counter-reset:h3 h4 h5 h6;border-bottom:2px solid #999;color:#555;font-weight:bold;font-size:18px;}.md h3,.md h4,.md h5,.md h6,.md .nonumberh3,.md .nonumberh4,.md .nonumberh5,.md .nonumberh6{font-family:Verdana,Helvetica,Arial,sans-serif;color:#555;font-size:16px;}.md h3{counter-reset:h4 h5 h6}.md h4{counter-reset:h5 h6}.md h5{counter-reset:h6}.md div.table{margin:16px 0 16px 0}.md table{border-collapse:collapse;line-height:140%;page-break-inside:avoid}.md table.table{margin:auto}.md table.calendar{width:100%;margin:auto;font-size:11px;font-family:Verdana,Helvetica,Arial,sans-serif}.md table.calendar th{font-size:16px}.md .today{background:#ECF8FA}.md .calendar .parenthesized{color:#999;font-style:italic}.md table.table th{color:#FFF;background-color:#AAA;border:1px solid #888;padding:8px 15px 8px 15px}.md table.table td{padding:5px 15px 5px 15px;border:1px solid #888}.md table.table tr:nth-child(even){background:#EEE}.md pre.tilde{border-top: 1px solid #CCC;border-bottom: 1px solid #CCC;padding: 5px 0 5px 20px;margin:0 0 0 0;background:#FCFCFC;page-break-inside:avoid}.md a.target{width:0px;height:0px;visibility:hidden;font-size:0px;display:inline-block}.md a:link, .md a:visited{color:#38A;text-decoration:none}.md a:link:hover{text-decoration:underline}.md dt{font-weight:700}.md dl>dd{margin-top:-8px; margin-bottom:8px}.md dl>table{margin:35px 0 30px}.md code{page-break-inside:avoid;} @media print{.md .listing code{white-space:pre-wrap}}.md .endnote{font-size:13px;line-height:15px;padding-left:10px;text-indent:-10px}.md .bib{padding-left:80px;text-indent:-80px;text-align:left}.markdeepFooter{font-size:9px;text-align:right;padding-top:80px;color:#999}.md .mediumTOC{float:right;font-size:12px;line-height:15px;border-left:1px solid #CCC;padding-left:15px;margin:15px 0px 15px 25px}.md .mediumTOC .level1{font-weight:600}.md .longTOC .level1{font-weight:600;display:block;padding-top:12px;margin:0 0 -20px}.md .shortTOC{text-align:center;font-weight:bold;margin-top:15px;font-size:14px}.md .img-attrib-container .img-attrib{font-size:50%;line-height:120%;writing-mode:vertical-rl;position:absolute;bottom:0;right:0;padding:8px 4px;color:#FFF;background-color:rgba(0,0,0,.3)}.md .img-attrib-container .img-attrib a{color:#FFF;text-decoration:none}.md .admonition{position:relative;margin:1em 0;padding:.4rem 1rem;border-radius:.2rem;border-left:2.5rem solid rgba(68,138,255,.4);background-color:rgba(68,138,255,.15);}.md .admonition-title{font-weight:bold;border-bottom:solid 1px rgba(68,138,255,.4);padding-bottom:4px;margin-bottom:4px;margin-left: -1rem;padding-left:1rem;margin-right:-1rem;border-color:rgba(68,138,255,.4)}.md .admonition.tip{border-left:2.5rem solid rgba(50,255,90,.4);background-color:rgba(50,255,90,.15)}.md .admonition.tip::before{content:"\24d8";font-weight:bold;font-size:150%;position:relative;top:3px;color:rgba(26,128,46,.8);left:-2.95rem;display:block;width:0;height:0}.md .admonition.tip>.admonition-title{border-color:rgba(50,255,90,.4)}.md .admonition.warn,.md .admonition.warning{border-left:2.5rem solid rgba(255,145,0,.4);background-color:rgba(255,145,0,.15)}.md .admonition.warn::before,.md .admonition.warning::before{content:"\26A0";font-weight:bold;font-size:150%;position:relative;top:2px;color:rgba(128,73,0,.8);left:-2.95rem;display:block;width:0;height:0}.md .admonition.warn>.admonition-title,.md .admonition.warning>.admonition-title{border-color:rgba(255,145,0,.4)}.md .admonition.error{border-left: 2.5rem solid rgba(255,23,68,.4);background-color:rgba(255,23,68,.15)}.md .admonition.error>.admonition-title{border-color:rgba(255,23,68,.4)}.md .admonition.error::before{content: "\2612";font-family:"Arial";font-size:200%;position:relative;color:rgba(128,12,34,.8);top:-2px;left:-3rem;display:block;width:0;height:0}.md .admonition p:last-child{margin-bottom:0}.md li.checked,.md li.unchecked{list-style:none;overflow:visible;text-indent:-1.2em}.md li.checked:before,.md li.unchecked:before{content:"\2611";display:block;float:left;width:1em;font-size:120%}.md li.unchecked:before{content:"\2610"}</style><style>.md h1::before {
+content:counter(h1) " ";
+counter-increment: h1;margin-right:10px}
+
+.md h2::before {
+content:counter(h1) "."counter(h2) " ";
+counter-increment: h2;margin-right:10px}
+
+.md h3::before {
+content:counter(h1) "."counter(h2) "."counter(h3) " ";
+counter-increment: h3;margin-right:10px}
+
+.md h4::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) " ";
+counter-increment: h4;margin-right:10px}
+
+.md h5::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) " ";
+counter-increment: h5;margin-right:10px}
+
+.md h6::before {
+content:counter(h1) "."counter(h2) "."counter(h3) "."counter(h4) "."counter(h5) "."counter(h6) " ";
+counter-increment: h6;margin-right:10px}
+
+</style><style>.hljs{display:block;overflow-x:auto;padding:0.5em;background:#fff;color:#000;-webkit-text-size-adjust:none}.hljs-comment{color:#006a00}.hljs-keyword{color:#02E}.hljs-literal,.nginx .hljs-title{color:#aa0d91}.method,.hljs-list .hljs-title,.hljs-tag .hljs-title,.setting .hljs-value,.hljs-winutils,.tex .hljs-command,.http .hljs-title,.hljs-request,.hljs-status,.hljs-name{color:#008}.hljs-envvar,.tex .hljs-special{color:#660}.hljs-string{color:#c41a16}.hljs-tag .hljs-value,.hljs-cdata,.hljs-filter .hljs-argument,.hljs-attr_selector,.apache .hljs-cbracket,.hljs-date,.hljs-regexp{color:#080}.hljs-sub .hljs-identifier,.hljs-pi,.hljs-tag,.hljs-tag .hljs-keyword,.hljs-decorator,.ini .hljs-title,.hljs-shebang,.hljs-prompt,.hljs-hexcolor,.hljs-rule .hljs-value,.hljs-symbol,.hljs-symbol .hljs-string,.hljs-number,.css .hljs-function,.hljs-function .hljs-title,.coffeescript .hljs-attribute{color:#A0C}.hljs-function .hljs-title{font-weight:bold;color:#000}.hljs-class .hljs-title,.smalltalk .hljs-class,.hljs-type,.hljs-typename,.hljs-tag .hljs-attribute,.hljs-doctype,.hljs-class .hljs-id,.hljs-built_in,.setting,.hljs-params,.clojure .hljs-attribute{color:#5c2699}.hljs-variable{color:#3f6e74}.css .hljs-tag,.hljs-rule .hljs-property,.hljs-pseudo,.hljs-subst{color:#000}.css .hljs-class,.css .hljs-id{color:#9b703f}.hljs-value .hljs-important{color:#ff7700;font-weight:bold}.hljs-rule .hljs-keyword{color:#c5af75}.hljs-annotation,.apache .hljs-sqbracket,.nginx .hljs-built_in{color:#9b859d}.hljs-preprocessor,.hljs-preprocessor *,.hljs-pragma{color:#643820}.tex .hljs-formula{background-color:#eee;font-style:italic}.diff .hljs-header,.hljs-chunk{color:#808080;font-weight:bold}.diff .hljs-change{background-color:#bccff9}.hljs-addition{background-color:#baeeba}.hljs-deletion{background-color:#ffc8bd}.hljs-comment .hljs-doctag{font-weight:bold}.method .hljs-id{color:#000}</style><style>div.title { padding-top: 40px; } div.afterTitles { height: 15px; }</style><meta charset="utf-8" emacsmode="-*- markdown -*-">
+                            <span class="md"><p><title>A warm welcome to DNS</title></p><div class="title"> A warm welcome to DNS </div>
+
+<div class="afterTitles"></div>
+
+<p></p><p>
+
+Note: this page is part of the
+'<a href="/">hello-dns</a>' documentation effort.
+
+</p>
+<div class="longTOC"><div class="tocHeader">Contents</div><p><a href="#" class="tocTop">(Top)</a><br>
+<a href="#tauth:theteachingauthoritativeserver" class="level1"><span class="tocNumber">1&nbsp; </span>tauth: the teaching authoritative server</a><br>
+<a href="#currentstatus" class="level1"><span class="tocNumber">2&nbsp; </span>Current status</a><br>
+<a href="#layout" class="level1"><span class="tocNumber">3&nbsp; </span>Layout</a><br>
+<a href="#thednstree" class="level1"><span class="tocNumber">4&nbsp; </span>The DNS Tree</a><br>
+&nbsp;&nbsp;<a href="#thednstree/objects" class="level2"><span class="tocNumber">4.1&nbsp; </span>Objects</a><br>
+&nbsp;&nbsp;<a href="#thednstree/manipulatingthetree" class="level2"><span class="tocNumber">4.2&nbsp; </span>Manipulating the tree</a><br>
+&nbsp;&nbsp;<a href="#thednstree/recordgenerators" class="level2"><span class="tocNumber">4.3&nbsp; </span>Record generators</a><br>
+&nbsp;&nbsp;<a href="#thednstree/abitoffun:dynamicrecordcontents" class="level2"><span class="tocNumber">4.4&nbsp; </span>A bit of fun: dynamic record contents</a><br>
+<a href="#therfc1034algorithm" class="level1"><span class="tocNumber">5&nbsp; </span>The RFC 1034 algorithm</a><br>
+&nbsp;&nbsp;<a href="#therfc1034algorithm/findingtherightzoneandnode" class="level2"><span class="tocNumber">5.1&nbsp; </span>Finding the right zone and node</a><br>
+&nbsp;&nbsp;<a href="#therfc1034algorithm/ifwepassedazonecut" class="level2"><span class="tocNumber">5.2&nbsp; </span>If we passed a zone cut</a><br>
+&nbsp;&nbsp;<a href="#therfc1034algorithm/nxdomain" class="level2"><span class="tocNumber">5.3&nbsp; </span>NXDOMAIN</a><br>
+&nbsp;&nbsp;<a href="#therfc1034algorithm/nodeexists" class="level2"><span class="tocNumber">5.4&nbsp; </span>Node exists</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#therfc1034algorithm/nodeexists/checkforacname" class="level3"><span class="tocNumber">5.4.1&nbsp; </span>Check for a CNAME</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#therfc1034algorithm/nodeexists/nameexists,nocname,matchingtypes" class="level3"><span class="tocNumber">5.4.2&nbsp; </span>Name exists, no CNAME, matching types</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="#therfc1034algorithm/nodeexists/thenameexists,butnotypesornotypesmatch" class="level3"><span class="tocNumber">5.4.3&nbsp; </span>The name exists, but no types or no types match</a><br>
+<a href="#axfr" class="level1"><span class="tocNumber">6&nbsp; </span>AXFR</a><br>
+</p></div><a class="target" name="tauth:theteachingauthoritativeserver">&nbsp;</a><a class="target" name="tauth:theteachingauthoritativeserver">&nbsp;</a><a class="target" name="toc1">&nbsp;</a><h1>tauth: the teaching authoritative server</h1>
+<p>
+
+<code>tauth</code> is based on the <a href="/tdns"><code>tdns</code></a> teachable DNS library.
+<code>tauth</code> is a relatively full-featured authoritative server.
+
+</p>
+<a class="target" name="currentstatus">&nbsp;</a><a class="target" name="currentstatus">&nbsp;</a><a class="target" name="toc2">&nbsp;</a><h1>Current status</h1>
+<p>
+
+All 'basic DNS' items are implemented:
+
+</p><p>
+
+</p><ul>
+ <li class="asterisk">UDP &amp; TCP
+</li>
+ <li class="asterisk">AXFR (incoming and outgoing)
+</li>
+ <li class="asterisk">Wildcards
+</li>
+ <li class="asterisk">Delegations
+</li>
+ <li class="asterisk">Glue records
+</li>
+ <li class="asterisk">Truncation
+</li>
+ <li class="asterisk">Compression</li></ul>
+
+<p></p><p>
+
+As a bonus:
+
+</p><p>
+
+</p><ul>
+ <li class="asterisk">EDNS (buffer size, no options)
+</li>
+ <li class="asterisk">Serving of DNSSEC signed zones</li></ul>
+
+<p></p><p>
+
+Known broken:
+
+</p><p>
+
+</p><ul>
+ <li class="asterisk">TCP/IP does not follow recommended timeouts</li></ul>
+
+<p></p><p>
+
+The code is not quite in a teachable state yet and still contains ugly bits.
+But well worth <a href="https://github.com/ahupowerdns/hello-dns/tree/master/tdns">a
+read</a>.
+
+</p>
+<a class="target" name="layout">&nbsp;</a><a class="target" name="layout">&nbsp;</a><a class="target" name="toc3">&nbsp;</a><h1>Layout</h1>
+<p>
+
+Key to a good DNS implementation is having a faithful DNS storage model,
+with the correct kind of objects in them.
+
+</p><p>
+
+Over the decades, many many nameservers have started out with an incorrect
+storage model, leading to pain later on with empty non-terminals, case
+sensitivity, setting the 'AA' bit on glue (or not) and eventually DNSSEC
+ordering problems.
+
+</p><p>
+
+When storing DNS as a tree, as described in RFC 1034, a lot of things go
+right “automatically”.  When DNS Names are a fundamental type composed out
+of DNS Labels with the correct case-insensitive equivalence and identity
+rules, lots of problems can never happen.
+
+</p><p>
+
+The core or <code>tauth</code> therefore is the tree of nodes as intended in 1034,
+containing DNS native objects like DNS Labels and DNS Names.
+
+</p>
+<a class="target" name="thednstree">&nbsp;</a><a class="target" name="thednstree">&nbsp;</a><a class="target" name="toc4">&nbsp;</a><h1>The DNS Tree</h1>
+<p>
+
+The DNS Tree is of fundamental importance, and is used a number of times
+within <code>tauth</code>.
+
+</p><p>
+
+When storing the contents of the <code>org</code> zone, it may look like this:
+
+</p><p>
+
+<svg class="diagram" xmlns="http://www.w3.org/2000/svg" version="1.1" height="304" width="768" style="margin:0 auto 0 auto;"><g transform="translate(8,16 )">
+<path d="M 136,192 L 136,224 " style="fill:none;"></path>
+<path d="M 208,192 L 208,224 " style="fill:none;"></path>
+<path d="M 296,48 L 296,80 " style="fill:none;"></path>
+<path d="M 296,112 L 296,160 " style="fill:none;"></path>
+<path d="M 288,16 L 304,16 " style="fill:none;"></path>
+<path d="M 192,32 L 272,32 " style="fill:none;"></path>
+<path d="M 320,32 L 392,32 " style="fill:none;"></path>
+<path d="M 288,48 L 304,48 " style="fill:none;"></path>
+<path d="M 160,80 L 176,80 " style="fill:none;"></path>
+<path d="M 288,80 L 304,80 " style="fill:none;"></path>
+<path d="M 408,80 L 424,80 " style="fill:none;"></path>
+<path d="M 160,112 L 176,112 " style="fill:none;"></path>
+<path d="M 288,112 L 304,112 " style="fill:none;"></path>
+<path d="M 408,112 L 424,112 " style="fill:none;"></path>
+<path d="M 128,160 L 144,160 " style="fill:none;"></path>
+<path d="M 200,160 L 216,160 " style="fill:none;"></path>
+<path d="M 288,160 L 304,160 " style="fill:none;"></path>
+<path d="M 128,192 L 144,192 " style="fill:none;"></path>
+<path d="M 200,192 L 216,192 " style="fill:none;"></path>
+<path d="M 288,192 L 304,192 " style="fill:none;"></path>
+<path d="M 128,224 L 144,224 " style="fill:none;"></path>
+<path d="M 200,224 L 216,224 " style="fill:none;"></path>
+<path d="M 128,256 L 144,256 " style="fill:none;"></path>
+<path d="M 200,256 L 216,256 " style="fill:none;"></path>
+<path d="M 168,112 L 192,160 " style="fill:none;"></path>
+<path d="M 392,32 L 416,80 " style="fill:none;"></path>
+<path d="M 168,80 L 192,32 " style="fill:none;"></path>
+<path d="M 144,160 L 168,112 " style="fill:none;"></path>
+<path d="M 288,16 C 271.2,16 272,32 272,32 " style="fill:none;"></path>
+<path d="M 304,16 C 320.8,16 320,32 320,32 " style="fill:none;"></path>
+<path d="M 288,48 C 271.2,48 272,32 272,32 " style="fill:none;"></path>
+<path d="M 304,48 C 320.8,48 320,32 320,32 " style="fill:none;"></path>
+<path d="M 160,80 C 143.2,80 144,96 144,96 " style="fill:none;"></path>
+<path d="M 176,80 C 192.8,80 192,96 192,96 " style="fill:none;"></path>
+<path d="M 288,80 C 271.2,80 272,96 272,96 " style="fill:none;"></path>
+<path d="M 304,80 C 320.8,80 320,96 320,96 " style="fill:none;"></path>
+<path d="M 408,80 C 391.2,80 392,96 392,96 " style="fill:none;"></path>
+<path d="M 424,80 C 440.8,80 440,96 440,96 " style="fill:none;"></path>
+<path d="M 160,112 C 143.2,112 144,96 144,96 " style="fill:none;"></path>
+<path d="M 176,112 C 192.8,112 192,96 192,96 " style="fill:none;"></path>
+<path d="M 288,112 C 271.2,112 272,96 272,96 " style="fill:none;"></path>
+<path d="M 304,112 C 320.8,112 320,96 320,96 " style="fill:none;"></path>
+<path d="M 408,112 C 391.2,112 392,96 392,96 " style="fill:none;"></path>
+<path d="M 424,112 C 440.8,112 440,96 440,96 " style="fill:none;"></path>
+<path d="M 128,160 C 111.2,160 112,176 112,176 " style="fill:none;"></path>
+<path d="M 144,160 C 160.8,160 160,176 160,176 " style="fill:none;"></path>
+<path d="M 200,160 C 183.2,160 184,176 184,176 " style="fill:none;"></path>
+<path d="M 216,160 C 232.8,160 232,176 232,176 " style="fill:none;"></path>
+<path d="M 288,160 C 271.2,160 272,176 272,176 " style="fill:none;"></path>
+<path d="M 304,160 C 320.8,160 320,176 320,176 " style="fill:none;"></path>
+<path d="M 128,192 C 111.2,192 112,176 112,176 " style="fill:none;"></path>
+<path d="M 144,192 C 160.8,192 160,176 160,176 " style="fill:none;"></path>
+<path d="M 200,192 C 183.2,192 184,176 184,176 " style="fill:none;"></path>
+<path d="M 216,192 C 232.8,192 232,176 232,176 " style="fill:none;"></path>
+<path d="M 288,192 C 271.2,192 272,176 272,176 " style="fill:none;"></path>
+<path d="M 304,192 C 320.8,192 320,176 320,176 " style="fill:none;"></path>
+<path d="M 128,224 C 111.2,224 112,240 112,240 " style="fill:none;"></path>
+<path d="M 144,224 C 160.8,224 160,240 160,240 " style="fill:none;"></path>
+<path d="M 200,224 C 183.2,224 184,240 184,240 " style="fill:none;"></path>
+<path d="M 216,224 C 232.8,224 232,240 232,240 " style="fill:none;"></path>
+<path d="M 128,256 C 111.2,256 112,240 112,240 " style="fill:none;"></path>
+<path d="M 144,256 C 160.8,256 160,240 160,240 " style="fill:none;"></path>
+<path d="M 200,256 C 183.2,256 184,240 184,240 " style="fill:none;"></path>
+<path d="M 216,256 C 232.8,256 232,240 232,240 " style="fill:none;"></path>
+<g transform="translate(0,0)"><text text-anchor="middle" x="24" y="36">1</text><text text-anchor="middle" x="24" y="100">2</text><text text-anchor="middle" x="160" y="100">i</text><text text-anchor="middle" x="168" y="100">e</text><text text-anchor="middle" x="176" y="100">t</text><text text-anchor="middle" x="184" y="100">f</text><text text-anchor="middle" x="288" y="100">i</text><text text-anchor="middle" x="296" y="100">e</text><text text-anchor="middle" x="304" y="100">t</text><text text-anchor="middle" x="312" y="100">g</text><text text-anchor="middle" x="408" y="100">.</text><text text-anchor="middle" x="416" y="100">.</text><text text-anchor="middle" x="424" y="100">.</text><text text-anchor="middle" x="24" y="180">3</text><text text-anchor="middle" x="128" y="180">o</text><text text-anchor="middle" x="136" y="180">r</text><text text-anchor="middle" x="144" y="180">d</text><text text-anchor="middle" x="200" y="180">f</text><text text-anchor="middle" x="208" y="180">r</text><text text-anchor="middle" x="216" y="180">a</text><text text-anchor="middle" x="288" y="180">.</text><text text-anchor="middle" x="296" y="180">.</text><text text-anchor="middle" x="304" y="180">.</text><text text-anchor="middle" x="24" y="244">4</text><text text-anchor="middle" x="128" y="244">n</text><text text-anchor="middle" x="136" y="244">s</text><text text-anchor="middle" x="144" y="244">1</text><text text-anchor="middle" x="200" y="244">n</text><text text-anchor="middle" x="208" y="244">s</text><text text-anchor="middle" x="216" y="244">2</text></g></g></svg>
+
+</p><p>
+
+This tree has a depth of four. The top node has an empty name, and is
+relative to the name of the zone, in this case <code>org</code>.
+
+</p><p>
+
+On layer 4, we find the names <code>ns1.ord.ietf.org</code> and <code>ns2.fra.ietf.org</code>. Key
+to looking up anything in DNS is to follow the tree downwards and to observe
+what nodes are passed.
+
+</p><p>
+
+For example, a lookup for <code>www.ietf.org</code> starts as a lookup for <code>www.ietf</code>
+in the <code>org</code> zone (if loaded, of course).  Layer 1 is where we start (and
+find the Start of Authority record), and we look if there is a child node
+called <code>ietf</code>.  And there is.
+
+</p><p>
+
+As we look at that node, we could see NS records attached to it (<code>ietf.org NS
+ns1.ord.ietf.org</code>) for example. This means our lookup is done: we've found
+a zonecut. The authoritative server should now respond with a delegation by
+returning those NS records in the Nameserver section.
+
+</p><p>
+
+To complete the packet, we need to look up the IPv4 and IPv6 addresses of
+<code>ns1.ord.ietf.org</code> and <code>ns2.fra.ietf.org</code>. To do this, we traverse the tree
+downward again, starting at the apex with <code>ns1.ord.ietf</code> and going to the
+<code>ietf</code>, <code>ord</code> and finally <code>ns1</code> labels. There we find attached the IP(v6)
+addresses.
+
+</p>
+<a class="target" name="objects">&nbsp;</a><a class="target" name="thednstree/objects">&nbsp;</a><a class="target" name="toc4.1">&nbsp;</a><h2>Objects</h2>
+<p>
+
+<code>tdns</code> uses a DNS tree in three places: 1) to quickly find the right zone for
+a query 2) within that zone, to traverse the names 3) DNS name compression.
+
+</p><p>
+
+The DNS tree within <code>tdns</code> consists of <code>DNSNode</code> objects, each of which can
+have:
+
+</p><p>
+
+</p><ul>
+ <li class="asterisk">Child nodes
+</li>
+ <li class="asterisk">Pointer to a zone
+</li>
+ <li class="asterisk">Attached RRSets, keyed on type</li></ul>
+
+<p></p><p>
+
+The child nodes are always used in the DNS tree. The pointer to a zone is
+only used when consulting the 'tree of zones'. The attached RRsets meanwhile
+are only consulted when the right zone is found, to provide actual DNS
+answers.
+
+</p>
+<a class="target" name="manipulatingthetree">&nbsp;</a><a class="target" name="thednstree/manipulatingthetree">&nbsp;</a><a class="target" name="toc4.2">&nbsp;</a><h2>Manipulating the tree</h2>
+<p>
+
+To add nodes to the DNS tree, or to add things to existing nodes, use the
+<code>add</code> method like this:
+
+</p><pre class="listing backtick"><code><span class="line"></span>	newzone<span class="hljs-punctuation">-&gt;</span><span class="hljs-title function_ invoke__">add</span>({<span class="hljs-string">"www"</span>})<span class="hljs-punctuation">-&gt;</span><span class="hljs-title function_ invoke__">addRRs</span>(CNAMEGen::<span class="hljs-title function_ invoke__">make</span>({<span class="hljs-string">"server1"</span>,<span class="hljs-string">"powerdns"</span>,<span class="hljs-string">"org"</span>}));
+<span class="line"></span>	newzone<span class="hljs-punctuation">-&gt;</span><span class="hljs-title function_ invoke__">add</span>({<span class="hljs-string">"www"</span>})<span class="hljs-punctuation">-&gt;</span>rrsets[DNSType::CNAME].ttl = <span class="hljs-number">1200</span>;</code></pre><p>
+The first line creates the <code>www</code> node, and provisions a CNAME there. The
+second line updates the new node to set the ttl. Note that <code>addRRs</code> accepts
+multiple 'generator' parameters, more about which later.
+
+</p><p>
+
+<code>add</code> accepts <code>DNSName</code>s as parameter, so to populate
+www.fra.ietf.org, use <code>newzone-&gt;add({"www", "fra", "ietf", "org"})</code>.
+
+</p><p>
+
+Within <code>tdns</code>, the sample <code>powerdns.org</code> zone is populated within
+<a href="contents.cc">contents.cc</a>.
+
+</p><p>
+
+Finding nodes in the tree uses a slightly more complicated method called
+<code>find</code>. Unlike <code>add</code> it will not modify the tree, even though it has in
+common that it will return a pointer to a node.
+
+</p><p>
+
+<code>find</code> however also returns some additional things: which parts of the
+<code>DNSName</code> did not match a node, if a DNS zonecut was encountered while
+traversing the tree, and what name it had.
+
+</p><p>
+
+The syntax:
+
+</p><pre class="listing backtick"><code><span class="line"></span>	<span class="hljs-function">DNSName <span class="hljs-title">searchname</span>(<span class="hljs-params">{<span class="hljs-string">"www"</span>, <span class="hljs-string">"ietf"</span>, <span class="hljs-string">"org"</span>}</span>), lastname, zonecutname</span>;
+<span class="line"></span>	DNSNode* passedZonecut;
+<span class="line"></span>	DNSNode* node = bestzone-&gt;find(searchname, lastname, &amp;passedZonecut, &amp;zonecutname);</code></pre><p>
+
+When this operates on the <code>org</code> zone tree displayed above, after the call to
+<code>find</code>, <code>searchname</code> will be <code>www</code>, while <code>lastname</code> is <code>{"ietf", "org"}</code>.
+What this means was that the <code>www</code> label could not be matched in the tree,
+since it isn't there.
+
+</p><p>
+
+<code>passedZonecut</code> is set to the node that describes <code>ietf.org</code>, where NS
+records live that describe the delegation. <code>zonecutname</code> is therefore set to
+<code>ietf.org</code>.
+
+</p><p>
+
+To clarify this further, a lookup for <code>ns1.ord.ietf.org</code> would end up with:
+
+</p><p>
+
+</p><ul>
+ <li class="asterisk"><code>searchname</code> empty: all labels of <code>ns1.ord.ietf.org</code> were matched
+</li>
+ <li class="asterisk"><code>lastname</code> is then <code>ns1.ord.ietf.org</code>
+</li>
+ <li class="asterisk"><code>passedZonecut</code> again points to the <code>{"ietf", "org"}</code> node, which has the NS RRSet that describes the delegation
+</li>
+ <li class="asterisk"><code>zonecutname</code> is set to <code>{"ietf", "org"}</code>.</li></ul>
+
+<p></p><p>
+
+The DNS Tree is aware of <code>*</code> semantics, and when traversing nodes and not
+finding a match, it will look for a <code>*</code> node. The tree does not do any
+special processing for CNAMEs though.
+
+</p><p>
+
+Based on the <code>find</code> method, implementing the RFC 1034 DNS algorithm is very
+straightforward.
+
+</p>
+<a class="target" name="recordgenerators">&nbsp;</a><a class="target" name="thednstree/recordgenerators">&nbsp;</a><a class="target" name="toc4.3">&nbsp;</a><h2>Record generators</h2>
+<p>
+
+As noted above, <code>RRSet</code>s contain things like <code>CNAMEGen::make</code>. These are
+generators that are stored in a <code>DNSNode</code> and that know how to put their
+content into a <code>DNSMessageWriter</code>. Each implemented <code>DNSType</code> has at least
+one associated generator. A more complete example of populating a zone looks
+like this:
+
+</p><pre class="listing backtick"><code><span class="line"></span>	newzone-&gt;addRRs(<span class="hljs-name">SOAGen</span>:<span class="hljs-symbol">:make</span>({<span class="hljs-string">"ns1"</span>, <span class="hljs-string">"powerdns"</span>, <span class="hljs-string">"org"</span>}, {<span class="hljs-string">"admin"</span>, <span class="hljs-string">"powerdns"</span>, <span class="hljs-string">"org"</span>}, <span class="hljs-number">1</span>),
+<span class="line"></span>	                 NSGen:<span class="hljs-symbol">:make</span>({<span class="hljs-string">"ns1"</span>, <span class="hljs-string">"powerdns"</span>, <span class="hljs-string">"org"</span>}), NSGen:<span class="hljs-symbol">:make</span>({<span class="hljs-string">"ns2"</span>, <span class="hljs-string">"powerdns"</span>, <span class="hljs-string">"org"</span>}),
+<span class="line"></span>	                 MXGen:<span class="hljs-symbol">:make</span>(<span class="hljs-number">25</span>, {<span class="hljs-string">"server1"</span>, <span class="hljs-string">"powerdns"</span>, <span class="hljs-string">"org"</span>})
+<span class="line"></span>	               )<span class="hljs-comment">;</span>
+<span class="line"></span>	newzone-&gt;add({<span class="hljs-string">"server1"</span>})-&gt;addRRs(<span class="hljs-name">AGen</span>:<span class="hljs-symbol">:make</span>(<span class="hljs-string">"213.244.168.210"</span>), AAAAGen:<span class="hljs-symbol">:make</span>(<span class="hljs-string">"::1"</span>))<span class="hljs-comment">;</span></code></pre><p>
+This attaches SOA, NS and MX records to the apex of a zone, and defines a
+<code>server1</code> node that is also referenced in the MX record.
+
+</p><p>
+
+This code can be found in
+<a href="record-types.cc">record-types.cc</a>
+and
+<a href="record-types.cc">record-types.hh</a>.
+
+</p><p>
+
+Since there are many record types, it is imperative that adding a new one
+needs to happen in only one place. Within <code>tauth</code>, it actually requires two
+places: the <code>DNSType</code> enum needs to be updated with the numerical value of
+the type, and a 'XGen` struct needs to be written. Luckily this is simple
+enough. Here is the entire MX record implementation:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	<span class="hljs-keyword">struct</span> <span class="hljs-title class_">MXGen</span> : RRGen
+<span class="line"></span><span class="hljs-number">2</span>	{
+<span class="line"></span><span class="hljs-number">3</span>	  <span class="hljs-built_in">MXGen</span>(<span class="hljs-type">uint16_t</span> prio, <span class="hljs-type">const</span> DNSName&amp; name) : <span class="hljs-built_in">d_prio</span>(prio), <span class="hljs-built_in">d_name</span>(name) {}
+<span class="line"></span><span class="hljs-number">4</span>	  <span class="hljs-function"><span class="hljs-type">static</span> std::unique_ptr&lt; RRGen &gt; <span class="hljs-title">make</span><span class="hljs-params">(<span class="hljs-type">uint16_t</span> prio, <span class="hljs-type">const</span> DNSName&amp; name)</span>
+<span class="line"></span>5	  </span>{
+<span class="line"></span><span class="hljs-number">6</span>	    <span class="hljs-keyword">return</span> std::<span class="hljs-built_in">make_unique</span>&lt; MXGen &gt;(prio, name);
+<span class="line"></span><span class="hljs-number">7</span>	  }
+<span class="line"></span><span class="hljs-number">8</span>	  <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">toMessage</span><span class="hljs-params">(DNSMessageWriter&amp; dpw)</span> <span class="hljs-keyword">override</span></span>;
+<span class="line"></span><span class="hljs-number">9</span>	  <span class="hljs-function">DNSType <span class="hljs-title">getType</span><span class="hljs-params">()</span> <span class="hljs-type">const</span> <span class="hljs-keyword">override</span> </span>{ <span class="hljs-keyword">return</span> DNSType::MX; }
+<span class="line"></span><span class="hljs-number">10</span>	  <span class="hljs-type">uint16_t</span> d_prio;
+<span class="line"></span><span class="hljs-number">11</span>	  DNSName d_name;
+<span class="line"></span><span class="hljs-number">12</span>	};
+<span class="line"></span>
+<span class="line"></span>	...
+<span class="line"></span>
+<span class="line"></span><span class="hljs-number">13</span>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">MXGen::toMessage</span><span class="hljs-params">(DNSMessageWriter&amp; dmw)</span>
+<span class="line"></span>14	</span>{
+<span class="line"></span><span class="hljs-number">15</span>	  dmw.<span class="hljs-built_in">putUInt16</span>(d_prio);
+<span class="line"></span><span class="hljs-number">16</span>	  dmw.<span class="hljs-built_in">putName</span>(d_name);
+<span class="line"></span><span class="hljs-number">17</span>	}</code></pre><p>
+
+Line 3 stores the priority and server name of this MX record (as defined in
+lines 10 and 11).
+
+</p><p>
+
+Lines 4-7 are mechanics so we can make a smart pointer for an MXGen type
+using a call to <code>make</code>. This smart pointer is sort of reference counted in
+that its reference count is always 1. This means there is no overhead.
+
+</p><p>
+
+Line 8 defines the call that transposes this record into a
+<code>DNSMessageWriter</code>. Line 9 announces to anyone who wants to know what the
+<code>DNSType</code> of this generator is. This is used by <code>addRRs</code> as shown above to
+put the generator in the right RRSet place.
+
+</p><p>
+
+13 to 17 show the construction of the actual DNS resource record in a
+packet: the 16 bit priority, followed by the name.
+
+</p>
+<a class="target" name="abitoffun:dynamicrecordcontents">&nbsp;</a><a class="target" name="thednstree/abitoffun:dynamicrecordcontents">&nbsp;</a><a class="target" name="toc4.4">&nbsp;</a><h2>A bit of fun: dynamic record contents</h2>
+<p>
+
+Although names can not easily be dynamic within the DNS tree (either they
+exist or they don't), contents can be changed at will.
+
+</p><p>
+
+<code>tdns</code> defines a <code>time.tdns.powerdns.org</code> node which has a <code>ClockTXTGen</code>:
+
+</p><pre class="listing backtick"><code><span class="line"></span>	newzone-&gt;add({<span class="hljs-string">"time"</span>})-&gt;addRRs(ClockTXTGen::make(<span class="hljs-string">"The time is %a, %d %b %Y %T %z"</span>));</code></pre><p>
+
+The code behind this generator:
+
+</p><pre class="listing backtick"><code><span class="line"></span>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">ClockTXTGen::toMessage</span><span class="hljs-params">(DNSMessageWriter&amp; dmw)</span>
+<span class="line"></span>	</span>{
+<span class="line"></span>		<span class="hljs-keyword">struct</span> <span class="hljs-title class_">tm</span> tm;
+<span class="line"></span>		<span class="hljs-type">time_t</span> now = <span class="hljs-built_in">time</span>(<span class="hljs-number">0</span>);
+<span class="line"></span>		<span class="hljs-built_in">localtime_r</span>(&amp;now, &amp;tm);
+<span class="line"></span>
+<span class="line"></span>		<span class="hljs-function">std::string <span class="hljs-title">txt</span><span class="hljs-params">(<span class="hljs-string">"overflow"</span>)</span></span>;
+<span class="line"></span>		<span class="hljs-type">char</span> buffer[<span class="hljs-number">160</span>];
+<span class="line"></span>		<span class="hljs-keyword">if</span>(<span class="hljs-built_in">strftime</span>(buffer, <span class="hljs-built_in">sizeof</span>(buffer), d_format.<span class="hljs-built_in">c_str</span>(), &amp;tm))
+<span class="line"></span>			txt=buffer;
+<span class="line"></span>
+<span class="line"></span>		<span class="hljs-function">TXTGen <span class="hljs-title">gen</span><span class="hljs-params">(txt)</span></span>;
+<span class="line"></span>		gen.<span class="hljs-built_in">toMessage</span>(dmw);
+<span class="line"></span>	}</code></pre><p>
+Note that this generator uses the existing TXT code to encode itself.
+
+</p>
+<a class="target" name="therfc1034algorithm">&nbsp;</a><a class="target" name="therfc1034algorithm">&nbsp;</a><a class="target" name="toc5">&nbsp;</a><h1>The RFC 1034 algorithm</h1>
+<p>
+
+As noted in the <a href="../basic.html">basic DNS</a> and
+<a href="../auth.html">authoritative</a> pages, the RFC 1034
+algorithm can be simplified for a pure authoritative server.
+
+</p>
+<a class="target" name="findingtherightzoneandnode">&nbsp;</a><a class="target" name="therfc1034algorithm/findingtherightzoneandnode">&nbsp;</a><a class="target" name="toc5.1">&nbsp;</a><h2>Finding the right zone and node</h2>
+<p>
+
+In <a href="tdns.cc">tdns.cc</a> , processing starts like this:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	DNSName zonename;
+<span class="line"></span><span class="hljs-number">2</span>	<span class="hljs-keyword">auto</span> fnd = zones.<span class="hljs-built_in">find</span>(qname, zonename);
+<span class="line"></span><span class="hljs-number">3</span>	...
+<span class="line"></span><span class="hljs-number">4</span>	response.dh.aa = <span class="hljs-number">1</span>;
+<span class="line"></span><span class="hljs-number">5</span>
+<span class="line"></span><span class="hljs-number">6</span>	<span class="hljs-keyword">auto</span> bestzone = fnd-&gt;zone;
+<span class="line"></span><span class="hljs-number">7</span>	<span class="hljs-function">DNSName <span class="hljs-title">searchname</span><span class="hljs-params">(qname)</span>, lastnode, zonecutname</span>;
+<span class="line"></span><span class="hljs-number">8</span>	<span class="hljs-type">const</span> DNSNode* passedZonecut=<span class="hljs-number">0</span>;
+<span class="line"></span><span class="hljs-number">9</span>	<span class="hljs-keyword">auto</span> node = bestzone-&gt;<span class="hljs-built_in">find</span>(searchname, lastnode, &amp;passedZonecut, &amp;zonecutname);</code></pre><p>
+
+In line 1 we declare the DNSName where we will store the name of the
+matching zone. On line 2 we look up the query name, and get the node
+containing the zone, plus its name.
+
+</p><p>
+
+Line 3 elides error response if no zone was found. In line 4 we declare we
+have authority. Line 6 saves some typing later on.
+
+</p><p>
+
+Lines 7 and 8 declare what we are looking for, and reserves names for where
+we store what we found.
+
+</p><p>
+
+Line 9 finally calls <code>find</code> to find the best node within our zone. As noted
+above, <code>find</code> not only finds the best node, but also lets us know if we
+passed any NS records along the way.
+
+</p>
+<a class="target" name="ifwepassedazonecut">&nbsp;</a><a class="target" name="therfc1034algorithm/ifwepassedazonecut">&nbsp;</a><a class="target" name="toc5.2">&nbsp;</a><h2>If we passed a zone cut</h2>
+<pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	<span class="hljs-title function_ invoke__">if</span>(passedZonecut) {
+<span class="line"></span><span class="hljs-number">2</span>		response.dh.aa = <span class="hljs-literal">false</span>;
+<span class="line"></span><span class="hljs-number">3</span>		cout&lt;&lt;<span class="hljs-string">"This is a delegation, zonecutname: '"</span> &lt;&lt; zonecutname &lt;&lt; <span class="hljs-string">"'"</span> &lt;&lt; endl;
+<span class="line"></span><span class="hljs-number">4</span>		auto iter = passedZonecut<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">find</span>(DNSType::NS);
+<span class="line"></span><span class="hljs-number">5</span>		<span class="hljs-title function_ invoke__">if</span>(iter != passedZonecut<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">end</span>()) {
+<span class="line"></span><span class="hljs-number">6</span>			<span class="hljs-keyword">const</span> auto&amp; rrset = iter<span class="hljs-punctuation">-&gt;</span>second;
+<span class="line"></span><span class="hljs-number">7</span>			vector&lt; DNSName &gt; toresolve;
+<span class="line"></span><span class="hljs-number">8</span>			<span class="hljs-title function_ invoke__">for</span>(<span class="hljs-keyword">const</span> auto&amp; rr : rrset.contents) {
+<span class="line"></span><span class="hljs-number">9</span>				response.<span class="hljs-title function_ invoke__">putRR</span>(DNSSection::Authority, zonecutname+zonename, DNSType::NS, rrset.ttl, rr);
+<span class="line"></span><span class="hljs-number">10</span>				toresolve.<span class="hljs-title function_ invoke__">push_back</span>(dynamic_cast&lt; NSGen* &gt;(rr.<span class="hljs-title function_ invoke__">get</span>())<span class="hljs-punctuation">-&gt;</span>d_name);
+<span class="line"></span><span class="hljs-number">11</span>			}
+<span class="line"></span><span class="hljs-number">12</span>			<span class="hljs-title function_ invoke__">addAdditional</span>(bestzone, zonename, toresolve, response);
+<span class="line"></span><span class="hljs-number">13</span>		}
+<span class="line"></span><span class="hljs-number">14</span>	}</code></pre><p>
+
+This is the first thing we check: did we pass a zone cut? If so, on line 2
+we drop the aa bit, since we clearly are not providing an authoritative
+answer.
+
+</p><p>
+
+Lines 4 and 5 lookup and verify if there is actually an NS record at the
+zone cut. This should always be true.
+
+</p><p>
+
+In line 7 we store room for the NS server names we will need to look up
+glue for. In line 8 we iterate over the NS records, which we put in the
+<code>DNSMessageWriter</code> on line 9. On line 10 we store glue record names.
+
+</p><p>
+
+Finally on line 12, we call <code>addAdditional</code> which will look up the glue
+names for us. This completes the response in case of a delegation.
+
+</p><p>
+
+Note that contrary to RFC 1034, <code>addAdditional</code> <strong class="asterisk">only</strong> looks for glue
+within the <code>bestzone</code> itself.
+
+</p>
+<a class="target" name="nxdomain">&nbsp;</a><a class="target" name="therfc1034algorithm/nxdomain">&nbsp;</a><a class="target" name="toc5.3">&nbsp;</a><h2>NXDOMAIN</h2>
+<pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(!searchname.<span class="hljs-keyword">empty</span>()) {
+<span class="line"></span><span class="hljs-number">2</span>		<span class="hljs-keyword">if</span>(!CNAMELoopCount) <span class="hljs-comment">// RFC 1034, 4.3.2, step 3.c</span>
+<span class="line"></span><span class="hljs-number">3</span>			response.dh.rcode = (<span class="hljs-keyword">int</span>)<span class="hljs-title class_">RCode</span>::<span class="hljs-variable constant_">Nxdomain</span>;
+<span class="line"></span><span class="hljs-number">4</span>		<span class="hljs-keyword">const</span> <span class="hljs-variable constant_">auto</span>&amp; rrset = bestzone-&gt;rrsets[<span class="hljs-title class_">DNSType</span>::<span class="hljs-variable constant_">SOA</span>];
+<span class="line"></span><span class="hljs-number">5</span>
+<span class="line"></span><span class="hljs-number">6</span>		response.<span class="hljs-title function_ invoke__">putRR</span>(<span class="hljs-title class_">DNSSection</span>::<span class="hljs-variable constant_">Authority</span>, zonename, <span class="hljs-title class_">DNSType</span>::<span class="hljs-variable constant_">SOA</span>, rrset.ttl, rrset.contents[<span class="hljs-number">0</span>]);
+<span class="line"></span><span class="hljs-number">7</span>	}</code></pre><p>
+
+If <code>find</code> returned with a non-empty <code>searchname</code>, it meant there were parts
+of the query name that could not be matched to a node. We checked for a
+zonecut earlier (in the previous section), there was none. So this name
+really does not exist.
+
+</p><p>
+
+In line 3 we set the response status to NXDOMAIN, unless we've looped
+through a CNAME already.
+
+</p><p>
+
+In line 4 we look up the SOA record of our <code>bestzone</code> and in line 6 we put
+it in the message.
+
+</p>
+<a class="target" name="nodeexists">&nbsp;</a><a class="target" name="therfc1034algorithm/nodeexists">&nbsp;</a><a class="target" name="toc5.4">&nbsp;</a><h2>Node exists</h2>
+<p>
+
+At this stage we know a node exists for this name, although it may actually
+be a wildcard node. We do not actually care if it is. Here is what we have
+to do first though.
+
+</p>
+<a class="target" name="checkforacname">&nbsp;</a><a class="target" name="therfc1034algorithm/nodeexists/checkforacname">&nbsp;</a><a class="target" name="toc5.4.1">&nbsp;</a><h3>Check for a CNAME</h3>
+<pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	auto iter = node<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">cbegin</span>();
+<span class="line"></span><span class="hljs-number">2</span>	<span class="hljs-title function_ invoke__">if</span>(iter = node<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">find</span>(DNSType::CNAME), iter != node<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">end</span>()) {
+<span class="line"></span><span class="hljs-number">5</span>		<span class="hljs-keyword">const</span> auto&amp; rrset = iter<span class="hljs-punctuation">-&gt;</span>second;
+<span class="line"></span><span class="hljs-number">6</span>		response.<span class="hljs-title function_ invoke__">putRR</span>(DNSSection::Answer, lastnode+zonename, DNSType::CNAME, rrset.ttl, rrset.contents[<span class="hljs-number">0</span>]);
+<span class="line"></span><span class="hljs-number">7</span>		DNSName target=dynamic_cast&lt;cnamegen*&gt;(rrset.contents[<span class="hljs-number">0</span>].<span class="hljs-title function_ invoke__">get</span>())<span class="hljs-punctuation">-&gt;</span>d_name;
+<span class="line"></span><span class="hljs-number">8</span>		<span class="hljs-title function_ invoke__">if</span>(target.<span class="hljs-title function_ invoke__">makeRelative</span>(zonename)) {
+<span class="line"></span><span class="hljs-number">9</span>			searchname = target;
+<span class="line"></span><span class="hljs-number">10</span>			<span class="hljs-title function_ invoke__">if</span>(CNAMELoopCount++ &lt; <span class="hljs-number">10</span>) {
+<span class="line"></span><span class="hljs-number">11</span>				lastnode.<span class="hljs-title function_ invoke__">clear</span>();
+<span class="line"></span><span class="hljs-number">12</span>				zonecutname.<span class="hljs-title function_ invoke__">clear</span>();
+<span class="line"></span><span class="hljs-number">13</span>				goto loopCNAME;
+<span class="line"></span><span class="hljs-number">14</span>			}
+<span class="line"></span><span class="hljs-number">15</span>		}
+<span class="line"></span><span class="hljs-number">16</span>		<span class="hljs-keyword">else</span>
+<span class="line"></span><span class="hljs-number">17</span>			cout&lt;&lt;<span class="hljs-string">"  CNAME points to record "</span> &lt;&lt; target &lt;&lt; <span class="hljs-string">" in other zone, good luck"</span> &lt;&lt; endl;
+<span class="line"></span><span class="hljs-number">18</span>	}</code></pre><p>
+
+Line 1 defines an iterator for our subsequent lookup in line 2: is there a
+CNAME at this node? If so, in line 6 we put it in the DNSMessage. In line 7
+we extract the target of the CNAME.
+
+</p><p>
+
+In line 8 we again violate the RFC 1034 algorithm by checking if the CNAME
+points to somewhere within our own zone. If it points to another zone, we
+are not going to chase this CNAME.
+
+</p><p>
+
+On line 9 we redirect ourselves if within the same zone. We also check if we
+haven't looped 'too much' already. It appears everyone has picked the number
+10 for this. We do some cleanup on lines 11 and 12 and finally on line 13 we
+restart our algorithm. With a goto.
+
+</p>
+<a class="target" name="nameexists,nocname,matchingtypes">&nbsp;</a><a class="target" name="therfc1034algorithm/nodeexists/nameexists,nocname,matchingtypes">&nbsp;</a><a class="target" name="toc5.4.2">&nbsp;</a><h3>Name exists, no CNAME, matching types</h3>
+<pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	<span class="hljs-title function_ invoke__">if</span>(iter = node<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">find</span>(qtype), iter != node<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">end</span>() || (!node<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">empty</span>() &amp;&amp; qtype==DNSType::ANY)) {
+<span class="line"></span><span class="hljs-number">2</span>		auto range = <span class="hljs-title function_ invoke__">make_pair</span>(iter, iter);
+<span class="line"></span><span class="hljs-number">3</span>		<span class="hljs-title function_ invoke__">if</span>(qtype == DNSType::ANY)
+<span class="line"></span><span class="hljs-number">4</span>			range = <span class="hljs-title function_ invoke__">make_pair</span>(node<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">begin</span>(), node<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">end</span>());
+<span class="line"></span><span class="hljs-number">5</span>		<span class="hljs-keyword">else</span>
+<span class="line"></span><span class="hljs-number">6</span>			++range.second;
+<span class="line"></span><span class="hljs-number">7</span>		<span class="hljs-title function_ invoke__">for</span>(auto i2 = range.first; i2 != range.second; ++i2) {
+<span class="line"></span><span class="hljs-number">8</span>			<span class="hljs-keyword">const</span> auto&amp; rrset = i2<span class="hljs-punctuation">-&gt;</span>second;
+<span class="line"></span><span class="hljs-number">9</span>			<span class="hljs-title function_ invoke__">for</span>(<span class="hljs-keyword">const</span> auto&amp; rr : rrset.contents) {
+<span class="line"></span><span class="hljs-number">10</span>				response.<span class="hljs-title function_ invoke__">putRR</span>(DNSSection::Answer, lastnode+zonename, i2<span class="hljs-punctuation">-&gt;</span>first, rrset.ttl, rr);
+<span class="line"></span><span class="hljs-number">11</span>				<span class="hljs-title function_ invoke__">if</span>(i2<span class="hljs-punctuation">-&gt;</span>first == DNSType::MX)
+<span class="line"></span><span class="hljs-number">12</span>					additional.<span class="hljs-title function_ invoke__">push_back</span>(dynamic_cast&lt; MXGen* &gt;(rr.<span class="hljs-title function_ invoke__">get</span>())<span class="hljs-punctuation">-&gt;</span>d_name);
+<span class="line"></span><span class="hljs-number">13</span>			}
+<span class="line"></span><span class="hljs-number">14</span>		}
+<span class="line"></span><span class="hljs-number">15</span>	}</code></pre><p>
+
+On line 1 is a somewhat tricky lookup that tries to find the query type in
+the RRSET, and if it could not be found, if the query maybe was for ANY and
+there are records that could be matched.
+
+</p><p>
+
+On lines 2 to 6 we either pick the matching RRSet to put in the DNSMessage,
+or we set it up so we iterate over all types, which we then do on lines 8 to
+14.
+
+</p><p>
+
+Note that again we gather up the server name of the MX record for additional
+processing. If we supported SRV records, we would do the same for them.
+
+</p>
+<a class="target" name="thenameexists,butnotypesornotypesmatch">&nbsp;</a><a class="target" name="therfc1034algorithm/nodeexists/thenameexists,butnotypesornotypesmatch">&nbsp;</a><a class="target" name="toc5.4.3">&nbsp;</a><h3>The name exists, but no types or no types match</h3>
+<p>
+
+Finally one of the most vexing parts of DNS: a name that exists, but there
+are no types or at least no matching types. This could be an 'empty
+non-terminal', created out of thin air by 'some.long.name.powerdns.org'.
+This DNS Name populates nodes all along its length, even if no RRSets are
+attached to 'long.name.powerdns.org' for example.
+
+</p><p>
+
+In many servers this is tricky, but since we followed a DNS tree based
+design with nodes, our code is trivial:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	<span class="hljs-keyword">else</span> {
+<span class="line"></span><span class="hljs-number">2</span>		<span class="hljs-keyword">const</span> auto&amp; rrset = bestzone<span class="hljs-punctuation">-&gt;</span>rrsets[DNSType::SOA];
+<span class="line"></span><span class="hljs-number">3</span>		response.<span class="hljs-title function_ invoke__">putRR</span>(DNSSection::Authority, zonename, DNSType::SOA, rrset.ttl, rrset.contents[<span class="hljs-number">0</span>]);
+<span class="line"></span><span class="hljs-number">4</span>	}</code></pre><p>
+
+All we have to do is 'else' off the previous case, and add the SOA record.
+
+</p>
+<a class="target" name="axfr">&nbsp;</a><a class="target" name="axfr">&nbsp;</a><a class="target" name="toc6">&nbsp;</a><h1>AXFR</h1>
+<p>
+
+AXFR over TCP/IP consists of a series of DNS messages, each prefixed by a 16
+bit length field. The first and last RRSet contained within these DNS
+message(s) must be the SOA record of a zone. Code:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	DNSMessageWriter <span class="hljs-title function_ invoke__">response</span>(std::numeric_limits&lt; uint16_t &gt;::<span class="hljs-title function_ invoke__">max</span>()-<span class="hljs-title function_ invoke__">sizeof</span>(dnsheader));
+<span class="line"></span><span class="hljs-number">2</span>	DNSName zone;
+<span class="line"></span><span class="hljs-number">3</span>	auto fnd = zones<span class="hljs-punctuation">-&gt;</span><span class="hljs-title function_ invoke__">find</span>(name, zone);
+<span class="line"></span><span class="hljs-number">4</span>	<span class="hljs-title function_ invoke__">if</span>(!fnd || !fnd<span class="hljs-punctuation">-&gt;</span>zone || !name.<span class="hljs-title function_ invoke__">empty</span>() || !fnd<span class="hljs-punctuation">-&gt;</span>zone<span class="hljs-punctuation">-&gt;</span>rrsets.<span class="hljs-title function_ invoke__">count</span>(DNSType::SOA)) {
+<span class="line"></span><span class="hljs-number">5</span>	  cout&lt;&lt; <span class="hljs-string">"   This was not a zone, or zone had no SOA"</span> &lt;&lt; endl;
+<span class="line"></span><span class="hljs-number">6</span>	  <span class="hljs-keyword">return</span>;
+<span class="line"></span><span class="hljs-number">7</span>	}
+<span class="line"></span><span class="hljs-number">8</span>	response.dh = dm.dh;
+<span class="line"></span><span class="hljs-number">9</span>	response.dh.ad = response.dh.ra = response.dh.aa = <span class="hljs-number">0</span>;
+<span class="line"></span><span class="hljs-number">10</span>	response.dh.qr = <span class="hljs-number">1</span>;
+<span class="line"></span><span class="hljs-number">11</span>	response.<span class="hljs-title function_ invoke__">setQuestion</span>(zone, <span class="hljs-keyword">type</span>);
+<span class="line"></span><span class="hljs-number">12</span>
+<span class="line"></span><span class="hljs-number">13</span>	auto node = fnd<span class="hljs-punctuation">-&gt;</span>zone;
+<span class="line"></span><span class="hljs-number">14</span>
+<span class="line"></span><span class="hljs-number">15</span>	<span class="hljs-comment">// send SOA</span>
+<span class="line"></span><span class="hljs-number">16</span>	response.<span class="hljs-title function_ invoke__">putRR</span>(DNSSection::Answer, zone, DNSType::SOA, node<span class="hljs-punctuation">-&gt;</span>rrsets[DNSType::SOA].ttl, node<span class="hljs-punctuation">-&gt;</span>rrsets[DNSType::SOA].contents[<span class="hljs-number">0</span>]);
+<span class="line"></span><span class="hljs-number">17</span>
+<span class="line"></span><span class="hljs-number">18</span>	<span class="hljs-title function_ invoke__">writeTCPResponse</span>(sock, response);</code></pre><p>
+
+In line 1 we allocate a <code>DNSMessageWriter</code> of maximum size. Lines 2-7 find
+the best zone, as in the RFC 1034 algorithm. Of specific note is that 'empty
+non-terminal zones' could be found by this tree walking function, so we check for this.
+
+</p><p>
+
+The response is then prepared, copying in the original dnsheader (with the
+transaction id), and setting the flags, qname and qtype correctly.
+
+</p><p>
+
+Line 13 is again a convenience to save some typing. Line 16 adds the initial
+SOA record, and the response gets sent out on line 18.
+
+</p><p>
+
+Note that it is possible to use this first DNSMessage for the initial SOA
+record and subsequent records too. To keep things simple, we don't do this
+here.
+
+</p><p>
+
+Next up is the loop to pass the rest of the zone contents:
+
+</p><pre class="listing backtick"><code><span class="line"></span><span class="hljs-number">1</span>	response.setQuestion(zone, <span class="hljs-class"><span class="hljs-keyword">type</span>);</span>
+<span class="line"></span><span class="hljs-number">2</span>
+<span class="line"></span><span class="hljs-number">3</span>	node-&gt;visit([&amp;response,&amp;sock,&amp;name,&amp;<span class="hljs-class"><span class="hljs-keyword">type</span>,&amp;zone](<span class="hljs-title">const</span> <span class="hljs-type">DNSName</span>&amp; <span class="hljs-title">nname</span>, <span class="hljs-title">const</span> <span class="hljs-type">DNSNode</span>* <span class="hljs-title">n</span>) {
+<span class="line"></span>4		<span class="hljs-title">for</span>(<span class="hljs-title">const</span> <span class="hljs-title">auto</span>&amp; <span class="hljs-title">p</span> : <span class="hljs-title">n</span>-&gt;<span class="hljs-title">rrsets</span>) {
+<span class="line"></span>5			<span class="hljs-title">if</span>(<span class="hljs-title">p</span>.<span class="hljs-title">first</span> == <span class="hljs-type">DNSType</span>::<span class="hljs-type">SOA</span>)
+<span class="line"></span>6				<span class="hljs-title">continue</span>;
+<span class="line"></span>7			<span class="hljs-title">for</span>(<span class="hljs-title">const</span> <span class="hljs-title">auto</span>&amp; <span class="hljs-title">rr</span> : <span class="hljs-title">p</span>.<span class="hljs-title">second</span>.<span class="hljs-title">contents</span>) {
+<span class="line"></span>8				<span class="hljs-title">retry</span>:
+<span class="line"></span>9				<span class="hljs-title">try</span> {
+<span class="line"></span>10					<span class="hljs-title">response</span>.<span class="hljs-title">putRR</span>(<span class="hljs-type">DNSSection</span>::<span class="hljs-type">Answer</span>, <span class="hljs-title">nname</span>, <span class="hljs-title">p</span>.<span class="hljs-title">first</span>, <span class="hljs-title">p</span>.<span class="hljs-title">second</span>.<span class="hljs-title">ttl</span>, <span class="hljs-title">rr</span>);
+<span class="line"></span>11				}</span>
+<span class="line"></span><span class="hljs-number">12</span>				catch(std::out_of_range&amp; e) { // exceeded packet size
+<span class="line"></span><span class="hljs-number">13</span>					writeTCPResponse(sock, response);
+<span class="line"></span><span class="hljs-number">14</span>					response.setQuestion(zone, <span class="hljs-class"><span class="hljs-keyword">type</span>);</span>
+<span class="line"></span><span class="hljs-number">15</span>					goto retry;
+<span class="line"></span><span class="hljs-number">16</span>				}
+<span class="line"></span><span class="hljs-number">17</span>			}
+<span class="line"></span><span class="hljs-number">18</span>		}
+<span class="line"></span><span class="hljs-number">19</span>	}, zone);
+<span class="line"></span><span class="hljs-number">20</span>
+<span class="line"></span><span class="hljs-number">21</span>	writeTCPResponse(sock, response);</code></pre><p>
+
+In line 1, the DNS message is emptied of RRSets. Line 3 launches a visitor
+that walks the DNS Tree and calls putRR on all RRSets it finds, except the
+SOA record, which was sent already., so we skip it on line 5.
+
+</p><p>
+
+Lines 9 to 11 attempt to put this resource record in the message. If the
+record does not fit, <code>putRR</code> rolls back the addition, and throws an
+exception which we catch on line 12. There we write out the message to TCP,
+reset the packet, and try again.
+
+</p><p>
+
+Finally in line 21 we write out the last <code>DNSMessageWriter</code> we filled.
+
+</p><p>
+
+To terminate the AXFR, we now need to resend the SOA record, which we do as
+follows:
+
+</p><pre class="listing backtick"><code><span class="line"></span>	response.<span class="hljs-title function_ invoke__">putRR</span>(DNSSection::Answer, zone, DNSType::SOA, node<span class="hljs-punctuation">-&gt;</span>rrsets[DNSType::SOA].ttl, node<span class="hljs-punctuation">-&gt;</span>rrsets[DNSType::SOA].contents[<span class="hljs-number">0</span>]);
+<span class="line"></span>	<span class="hljs-title function_ invoke__">writeTCPResponse</span>(sock, response);</code></pre><p>
+
+Note: this code, in <code>tcpClientThread</code> of
+<a href="record-types.cc">tdns.cc</a>
+does not yet implement best TCP practices on timeouts and keeping open
+connections.
+
+</p><p>
+
+<script>
+window.markdeepOptions={};
+window.markdeepOptions.tocStyle = &ldquo;long&rdquo;;
+</script>
+</p></span><div id="mdContextMenu" style="visibility:hidden"></div><div class="markdeepFooter"><i>formatted by <a href="https://casual-effects.com/markdeep" style="color:#999">Markdeep&nbsp;1.16&nbsp;&nbsp;</a></i><div style="display:inline-block;font-size:13px;font-family:'Times New Roman',serif;vertical-align:middle;transform:translate(-3px,-1px)rotate(135deg);">✒</div></div></body></html>
